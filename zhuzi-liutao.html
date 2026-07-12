@@ -27,6 +27,8 @@
         .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
         .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
         .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item-link { text-decoration: none; color: inherit; border-bottom: none; display: block; }
+        .chapter-item-link:hover { border-bottom: none; }
         .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
         @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
     </style>
@@ -69,66 +71,71 @@
             <section class="chapter-section">
                 <h2>篇目</h2>
                 <div class="chapter-grid">
-                    <div class="chapter-item">文师第一</div>
-                    <div class="chapter-item">盈虚第二</div>
-                    <div class="chapter-item">国务第三</div>
-                    <div class="chapter-item">大礼第四</div>
-                    <div class="chapter-item">明传第五</div>
-                    <div class="chapter-item">六守第六</div>
-                    <div class="chapter-item">守土第七</div>
-                    <div class="chapter-item">守国第八</div>
-                    <div class="chapter-item">上贤第九</div>
-                    <div class="chapter-item">举贤第十</div>
-                    <div class="chapter-item">赏罚第十一</div>
-                    <div class="chapter-item">兵道第十二</div>
-                    <div class="chapter-item">发启第十三</div>
-                    <div class="chapter-item">文启第十四</div>
-                    <div class="chapter-item">文伐第十五</div>
-                    <div class="chapter-item">顺启第十六</div>
-                    <div class="chapter-item">三疑第十七</div>
-                    <div class="chapter-item">王翼第十八</div>
-                    <div class="chapter-item">论将第十九</div>
-                    <div class="chapter-item">选将第二十</div>
-                    <div class="chapter-item">立将第二十一</div>
-                    <div class="chapter-item">将威第二十二</div>
-                    <div class="chapter-item">励军第二十三</div>
-                    <div class="chapter-item">阴符第二十四</div>
-                    <div class="chapter-item">阴书第二十五</div>
-                    <div class="chapter-item">军势第二十六</div>
-                    <div class="chapter-item">奇兵第二十七</div>
-                    <div class="chapter-item">五音第二十八</div>
-                    <div class="chapter-item">兵征第二十九</div>
-                    <div class="chapter-item">农器第三十</div>
-                    <div class="chapter-item">军用第三十一</div>
-                    <div class="chapter-item">三陈第三十二</div>
-                    <div class="chapter-item">疾战第三十三</div>
-                    <div class="chapter-item">必出第三十四</div>
-                    <div class="chapter-item">军略第三十五</div>
-                    <div class="chapter-item">临境第三十六</div>
-                    <div class="chapter-item">动静第三十七</div>
-                    <div class="chapter-item">金鼓第三十八</div>
-                    <div class="chapter-item">绝道第三十九</div>
-                    <div class="chapter-item">略地第四十</div>
-                    <div class="chapter-item">火战第四十一</div>
-                    <div class="chapter-item">垒虚第四十二</div>
-                    <div class="chapter-item">林战第四十三</div>
-                    <div class="chapter-item">突战第四十四</div>
-                    <div class="chapter-item">敌强第四十五</div>
-                    <div class="chapter-item">敌武第四十六</div>
-                    <div class="chapter-item">鸟云山兵第四十七</div>
-                    <div class="chapter-item">鸟云泽兵第四十八</div>
-                    <div class="chapter-item">少众第四十九</div>
-                    <div class="chapter-item">分险第五十</div>
-                    <div class="chapter-item">分合第五十一</div>
-                    <div class="chapter-item">武锋第五十二</div>
-                    <div class="chapter-item">练士第五十三</div>
-                    <div class="chapter-item">教战第五十四</div>
-                    <div class="chapter-item">均兵第五十五</div>
-                    <div class="chapter-item">武车士第五十六</div>
-                    <div class="chapter-item">武骑士第五十七</div>
-                    <div class="chapter-item">战车第五十八</div>
-                    <div class="chapter-item">战骑第五十九</div>
-                    <div class="chapter-item">战步第六十</div>
+                    <a href="liutao-01.html" class="chapter-item-link"><div class="chapter-item">文韬</div></a>
+                    <a href="liutao-02.html" class="chapter-item-link"><div class="chapter-item">文师第一</div></a>
+                    <a href="liutao-03.html" class="chapter-item-link"><div class="chapter-item">盈虚第二</div></a>
+                    <a href="liutao-04.html" class="chapter-item-link"><div class="chapter-item">国务第三</div></a>
+                    <a href="liutao-05.html" class="chapter-item-link"><div class="chapter-item">大礼第四</div></a>
+                    <a href="liutao-06.html" class="chapter-item-link"><div class="chapter-item">明传第五</div></a>
+                    <a href="liutao-07.html" class="chapter-item-link"><div class="chapter-item">六守第六</div></a>
+                    <a href="liutao-08.html" class="chapter-item-link"><div class="chapter-item">守土第七</div></a>
+                    <a href="liutao-09.html" class="chapter-item-link"><div class="chapter-item">守国第八</div></a>
+                    <a href="liutao-10.html" class="chapter-item-link"><div class="chapter-item">上贤第九</div></a>
+                    <a href="liutao-11.html" class="chapter-item-link"><div class="chapter-item">举贤第十</div></a>
+                    <a href="liutao-12.html" class="chapter-item-link"><div class="chapter-item">赏罚第十一</div></a>
+                    <a href="liutao-13.html" class="chapter-item-link"><div class="chapter-item">兵道第十二</div></a>
+                    <a href="liutao-14.html" class="chapter-item-link"><div class="chapter-item">武韬</div></a>
+                    <a href="liutao-15.html" class="chapter-item-link"><div class="chapter-item">发启第十三</div></a>
+                    <a href="liutao-16.html" class="chapter-item-link"><div class="chapter-item">文启第十四</div></a>
+                    <a href="liutao-17.html" class="chapter-item-link"><div class="chapter-item">文伐第十五</div></a>
+                    <a href="liutao-18.html" class="chapter-item-link"><div class="chapter-item">顺启第十六</div></a>
+                    <a href="liutao-19.html" class="chapter-item-link"><div class="chapter-item">三疑第十七</div></a>
+                    <a href="liutao-20.html" class="chapter-item-link"><div class="chapter-item">龙韬</div></a>
+                    <a href="liutao-21.html" class="chapter-item-link"><div class="chapter-item">王翼第十八</div></a>
+                    <a href="liutao-22.html" class="chapter-item-link"><div class="chapter-item">论将第十九</div></a>
+                    <a href="liutao-23.html" class="chapter-item-link"><div class="chapter-item">选将第二十</div></a>
+                    <a href="liutao-24.html" class="chapter-item-link"><div class="chapter-item">立将第二十一</div></a>
+                    <a href="liutao-25.html" class="chapter-item-link"><div class="chapter-item">将威第二十二</div></a>
+                    <a href="liutao-26.html" class="chapter-item-link"><div class="chapter-item">励军第二十三</div></a>
+                    <a href="liutao-27.html" class="chapter-item-link"><div class="chapter-item">阴符第二十四</div></a>
+                    <a href="liutao-28.html" class="chapter-item-link"><div class="chapter-item">阴书第二十五</div></a>
+                    <a href="liutao-29.html" class="chapter-item-link"><div class="chapter-item">军势第二十六</div></a>
+                    <a href="liutao-30.html" class="chapter-item-link"><div class="chapter-item">奇兵第二十七</div></a>
+                    <a href="liutao-31.html" class="chapter-item-link"><div class="chapter-item">五音第二十八</div></a>
+                    <a href="liutao-32.html" class="chapter-item-link"><div class="chapter-item">兵征第二十九</div></a>
+                    <a href="liutao-33.html" class="chapter-item-link"><div class="chapter-item">农器第三十</div></a>
+                    <a href="liutao-34.html" class="chapter-item-link"><div class="chapter-item">虎韬</div></a>
+                    <a href="liutao-35.html" class="chapter-item-link"><div class="chapter-item">军用第三十一</div></a>
+                    <a href="liutao-36.html" class="chapter-item-link"><div class="chapter-item">三陈第三十二</div></a>
+                    <a href="liutao-37.html" class="chapter-item-link"><div class="chapter-item">疾战第三十三</div></a>
+                    <a href="liutao-38.html" class="chapter-item-link"><div class="chapter-item">必出第三十四</div></a>
+                    <a href="liutao-39.html" class="chapter-item-link"><div class="chapter-item">军略第三十五</div></a>
+                    <a href="liutao-40.html" class="chapter-item-link"><div class="chapter-item">临境第三十六</div></a>
+                    <a href="liutao-41.html" class="chapter-item-link"><div class="chapter-item">动静第三十七</div></a>
+                    <a href="liutao-42.html" class="chapter-item-link"><div class="chapter-item">金鼓第三十八</div></a>
+                    <a href="liutao-43.html" class="chapter-item-link"><div class="chapter-item">绝道第三十九</div></a>
+                    <a href="liutao-44.html" class="chapter-item-link"><div class="chapter-item">略地第四十</div></a>
+                    <a href="liutao-45.html" class="chapter-item-link"><div class="chapter-item">火战第四十一</div></a>
+                    <a href="liutao-46.html" class="chapter-item-link"><div class="chapter-item">垒虚第四十二</div></a>
+                    <a href="liutao-47.html" class="chapter-item-link"><div class="chapter-item">豹韬</div></a>
+                    <a href="liutao-48.html" class="chapter-item-link"><div class="chapter-item">林战第四十三</div></a>
+                    <a href="liutao-49.html" class="chapter-item-link"><div class="chapter-item">突战第四十四</div></a>
+                    <a href="liutao-50.html" class="chapter-item-link"><div class="chapter-item">敌强第四十五</div></a>
+                    <a href="liutao-51.html" class="chapter-item-link"><div class="chapter-item">敌武第四十六</div></a>
+                    <a href="liutao-52.html" class="chapter-item-link"><div class="chapter-item">鸟云山兵第四十七<span class="math-super1"><a id="noteBack_32" href="part0373_split_005.html#note_32" class="calibre22">[32]</a></span></div></a>
+                    <a href="liutao-53.html" class="chapter-item-link"><div class="chapter-item">鸟云泽兵第四十八<span class="math-super1"><a id="noteBack_43" href="part0373_split_006.html#note_43" class="calibre22">[43]</a></span></div></a>
+                    <a href="liutao-54.html" class="chapter-item-link"><div class="chapter-item">少众第四十九</div></a>
+                    <a href="liutao-55.html" class="chapter-item-link"><div class="chapter-item">分险第五十</div></a>
+                    <a href="liutao-56.html" class="chapter-item-link"><div class="chapter-item">犬韬</div></a>
+                    <a href="liutao-57.html" class="chapter-item-link"><div class="chapter-item">分合第五十一</div></a>
+                    <a href="liutao-58.html" class="chapter-item-link"><div class="chapter-item">武锋第五十二</div></a>
+                    <a href="liutao-59.html" class="chapter-item-link"><div class="chapter-item">练士第五十三</div></a>
+                    <a href="liutao-60.html" class="chapter-item-link"><div class="chapter-item">教战第五十四</div></a>
+                    <a href="liutao-61.html" class="chapter-item-link"><div class="chapter-item">均兵第五十五</div></a>
+                    <a href="liutao-62.html" class="chapter-item-link"><div class="chapter-item">武车士第五十六</div></a>
+                    <a href="liutao-63.html" class="chapter-item-link"><div class="chapter-item">武骑士第五十七</div></a>
+                    <a href="liutao-64.html" class="chapter-item-link"><div class="chapter-item">战车第五十八</div></a>
+                    <a href="liutao-65.html" class="chapter-item-link"><div class="chapter-item">战骑第五十九</div></a>
                 </div>
             </section>
         </div>

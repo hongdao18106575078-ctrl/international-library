@@ -27,6 +27,8 @@
         .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
         .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
         .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item-link { text-decoration: none; color: inherit; border-bottom: none; display: block; }
+        .chapter-item-link:hover { border-bottom: none; }
         .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
         @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
     </style>
@@ -69,20 +71,19 @@
             <section class="chapter-section">
                 <h2>篇目</h2>
                 <div class="chapter-grid">
-                    <div class="chapter-item">梁惠王上</div>
-                    <div class="chapter-item">梁惠王下</div>
-                    <div class="chapter-item">公孙丑上</div>
-                    <div class="chapter-item">公孙丑下</div>
-                    <div class="chapter-item">滕文公上</div>
-                    <div class="chapter-item">滕文公下</div>
-                    <div class="chapter-item">离娄上</div>
-                    <div class="chapter-item">离娄下</div>
-                    <div class="chapter-item">万章上</div>
-                    <div class="chapter-item">万章下</div>
-                    <div class="chapter-item">告子上</div>
-                    <div class="chapter-item">告子下</div>
-                    <div class="chapter-item">尽心上</div>
-                    <div class="chapter-item">尽心下</div>
+                    <a href="mengzi-01.html" class="chapter-item-link"><div class="chapter-item">梁惠王上 凡七章</div></a>
+                    <a href="mengzi-02.html" class="chapter-item-link"><div class="chapter-item">梁惠王下 凡十六章</div></a>
+                    <a href="mengzi-03.html" class="chapter-item-link"><div class="chapter-item">公孙丑上 凡九章</div></a>
+                    <a href="mengzi-04.html" class="chapter-item-link"><div class="chapter-item">公孙丑下 凡十四章</div></a>
+                    <a href="mengzi-05.html" class="chapter-item-link"><div class="chapter-item">滕文公上 凡五章</div></a>
+                    <a href="mengzi-06.html" class="chapter-item-link"><div class="chapter-item">滕文公下 凡十章</div></a>
+                    <a href="mengzi-07.html" class="chapter-item-link"><div class="chapter-item">离娄上 凡二十八章</div></a>
+                    <a href="mengzi-08.html" class="chapter-item-link"><div class="chapter-item">离娄下 凡三十三章</div></a>
+                    <a href="mengzi-09.html" class="chapter-item-link"><div class="chapter-item">万章上 凡九章</div></a>
+                    <a href="mengzi-10.html" class="chapter-item-link"><div class="chapter-item">万章下 凡九章</div></a>
+                    <a href="mengzi-11.html" class="chapter-item-link"><div class="chapter-item">告子上 凡二十章</div></a>
+                    <a href="mengzi-12.html" class="chapter-item-link"><div class="chapter-item">告子下 凡十六章</div></a>
+                    <a href="mengzi-13.html" class="chapter-item-link"><div class="chapter-item">尽心上 凡四十六章</div></a>
                 </div>
             </section>
         </div>

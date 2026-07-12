@@ -27,6 +27,8 @@
         .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
         .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
         .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item-link { text-decoration: none; color: inherit; border-bottom: none; display: block; }
+        .chapter-item-link:hover { border-bottom: none; }
         .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
         @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
     </style>
@@ -69,13 +71,14 @@
             <section class="chapter-section">
                 <h2>篇目</h2>
                 <div class="chapter-grid">
-                    <div class="chapter-item">天瑞</div>
-                    <div class="chapter-item">黄帝</div>
-                    <div class="chapter-item">周穆王</div>
-                    <div class="chapter-item">汤问</div>
-                    <div class="chapter-item">力命</div>
-                    <div class="chapter-item">杨朱</div>
-                    <div class="chapter-item">说符</div>
+                    <a href="liezi-01.html" class="chapter-item-link"><div class="chapter-item">天瑞</div></a>
+                    <a href="liezi-02.html" class="chapter-item-link"><div class="chapter-item">黄帝</div></a>
+                    <a href="liezi-03.html" class="chapter-item-link"><div class="chapter-item">周穆王</div></a>
+                    <a href="liezi-04.html" class="chapter-item-link"><div class="chapter-item">仲尼</div></a>
+                    <a href="liezi-05.html" class="chapter-item-link"><div class="chapter-item">汤问</div></a>
+                    <a href="liezi-06.html" class="chapter-item-link"><div class="chapter-item">力命</div></a>
+                    <a href="liezi-07.html" class="chapter-item-link"><div class="chapter-item">杨朱</div></a>
+                    <a href="liezi-08.html" class="chapter-item-link"><div class="chapter-item">说符</div></a>
                 </div>
             </section>
         </div>

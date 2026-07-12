@@ -27,6 +27,8 @@
         .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
         .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
         .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item-link { text-decoration: none; color: inherit; border-bottom: none; display: block; }
+        .chapter-item-link:hover { border-bottom: none; }
         .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
         @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
     </style>
@@ -69,50 +71,62 @@
             <section class="chapter-section">
                 <h2>篇目</h2>
                 <div class="chapter-grid">
-                    <div class="chapter-item">相鲁第一</div>
-                    <div class="chapter-item">始诛第二</div>
-                    <div class="chapter-item">王言解第三</div>
-                    <div class="chapter-item">大婚解第四</div>
-                    <div class="chapter-item">儒行解第五</div>
-                    <div class="chapter-item">问礼第六</div>
-                    <div class="chapter-item">五仪解第七</div>
-                    <div class="chapter-item">致思第八</div>
-                    <div class="chapter-item">三恕第九</div>
-                    <div class="chapter-item">好生第十</div>
-                    <div class="chapter-item">观周第十一</div>
-                    <div class="chapter-item">弟子行第十二</div>
-                    <div class="chapter-item">贤君第十三</div>
-                    <div class="chapter-item">辩政第十四</div>
-                    <div class="chapter-item">六本第十五</div>
-                    <div class="chapter-item">辩物第十六</div>
-                    <div class="chapter-item">哀公问政第十七</div>
-                    <div class="chapter-item">颜回第十八</div>
-                    <div class="chapter-item">子路初见第十九</div>
-                    <div class="chapter-item">在厄第二十</div>
-                    <div class="chapter-item">入官第二十一</div>
-                    <div class="chapter-item">困誓第二十二</div>
-                    <div class="chapter-item">五帝德第二十三</div>
-                    <div class="chapter-item">五帝第二十四</div>
-                    <div class="chapter-item">执辔第二十五</div>
-                    <div class="chapter-item">本命解第二十六</div>
-                    <div class="chapter-item">论礼第二十七</div>
-                    <div class="chapter-item">观乡射第二十八</div>
-                    <div class="chapter-item">郊问第二十九</div>
-                    <div class="chapter-item">五刑解第三十</div>
-                    <div class="chapter-item">刑政第三十一</div>
-                    <div class="chapter-item">礼运第三十二</div>
-                    <div class="chapter-item">冠颂第三十三</div>
-                    <div class="chapter-item">庙制第三十四</div>
-                    <div class="chapter-item">辩乐解第三十五</div>
-                    <div class="chapter-item">问玉第三十六</div>
-                    <div class="chapter-item">屈节解第三十七</div>
-                    <div class="chapter-item">七十二弟子解第三十八</div>
-                    <div class="chapter-item">本姓解第三十九</div>
-                    <div class="chapter-item">终记解第四十</div>
-                    <div class="chapter-item">正论解第四十一</div>
-                    <div class="chapter-item">曲礼子贡问第四十二</div>
-                    <div class="chapter-item">曲礼子夏问第四十三</div>
-                    <div class="chapter-item">曲礼公西赤问第四十四</div>
+                    <a href="kongzi-jiayu-01.html" class="chapter-item-link"><div class="chapter-item">家语序</div></a>
+                    <a href="kongzi-jiayu-02.html" class="chapter-item-link"><div class="chapter-item">卷一</div></a>
+                    <a href="kongzi-jiayu-03.html" class="chapter-item-link"><div class="chapter-item">相鲁第一</div></a>
+                    <a href="kongzi-jiayu-04.html" class="chapter-item-link"><div class="chapter-item">始诛第二</div></a>
+                    <a href="kongzi-jiayu-05.html" class="chapter-item-link"><div class="chapter-item">王言解第三</div></a>
+                    <a href="kongzi-jiayu-06.html" class="chapter-item-link"><div class="chapter-item">大婚解第四</div></a>
+                    <a href="kongzi-jiayu-07.html" class="chapter-item-link"><div class="chapter-item">儒行解第五</div></a>
+                    <a href="kongzi-jiayu-08.html" class="chapter-item-link"><div class="chapter-item">问礼第六</div></a>
+                    <a href="kongzi-jiayu-09.html" class="chapter-item-link"><div class="chapter-item">五仪解第七</div></a>
+                    <a href="kongzi-jiayu-10.html" class="chapter-item-link"><div class="chapter-item">卷二</div></a>
+                    <a href="kongzi-jiayu-11.html" class="chapter-item-link"><div class="chapter-item">致思第八</div></a>
+                    <a href="kongzi-jiayu-12.html" class="chapter-item-link"><div class="chapter-item">三恕第九</div></a>
+                    <a href="kongzi-jiayu-13.html" class="chapter-item-link"><div class="chapter-item">好生第十</div></a>
+                    <a href="kongzi-jiayu-14.html" class="chapter-item-link"><div class="chapter-item">卷三</div></a>
+                    <a href="kongzi-jiayu-15.html" class="chapter-item-link"><div class="chapter-item">观周第十一</div></a>
+                    <a href="kongzi-jiayu-16.html" class="chapter-item-link"><div class="chapter-item">弟子行第十二</div></a>
+                    <a href="kongzi-jiayu-17.html" class="chapter-item-link"><div class="chapter-item">贤君第十三</div></a>
+                    <a href="kongzi-jiayu-18.html" class="chapter-item-link"><div class="chapter-item">辩政第十四</div></a>
+                    <a href="kongzi-jiayu-19.html" class="chapter-item-link"><div class="chapter-item">卷四</div></a>
+                    <a href="kongzi-jiayu-20.html" class="chapter-item-link"><div class="chapter-item">六本第十五</div></a>
+                    <a href="kongzi-jiayu-21.html" class="chapter-item-link"><div class="chapter-item">辩物第十六</div></a>
+                    <a href="kongzi-jiayu-22.html" class="chapter-item-link"><div class="chapter-item">哀公问政第十七</div></a>
+                    <a href="kongzi-jiayu-23.html" class="chapter-item-link"><div class="chapter-item">卷五</div></a>
+                    <a href="kongzi-jiayu-24.html" class="chapter-item-link"><div class="chapter-item">颜回第十八</div></a>
+                    <a href="kongzi-jiayu-25.html" class="chapter-item-link"><div class="chapter-item">子路初见第十九</div></a>
+                    <a href="kongzi-jiayu-26.html" class="chapter-item-link"><div class="chapter-item">在厄第二十</div></a>
+                    <a href="kongzi-jiayu-27.html" class="chapter-item-link"><div class="chapter-item">入官第二十一</div></a>
+                    <a href="kongzi-jiayu-28.html" class="chapter-item-link"><div class="chapter-item">困誓第二十二</div></a>
+                    <a href="kongzi-jiayu-29.html" class="chapter-item-link"><div class="chapter-item">五帝德第二十三</div></a>
+                    <a href="kongzi-jiayu-30.html" class="chapter-item-link"><div class="chapter-item">卷六</div></a>
+                    <a href="kongzi-jiayu-31.html" class="chapter-item-link"><div class="chapter-item">五帝第二十四</div></a>
+                    <a href="kongzi-jiayu-32.html" class="chapter-item-link"><div class="chapter-item">执辔第二十五</div></a>
+                    <a href="kongzi-jiayu-33.html" class="chapter-item-link"><div class="chapter-item">本命解第二十六</div></a>
+                    <a href="kongzi-jiayu-34.html" class="chapter-item-link"><div class="chapter-item">论礼第二十七</div></a>
+                    <a href="kongzi-jiayu-35.html" class="chapter-item-link"><div class="chapter-item">卷七</div></a>
+                    <a href="kongzi-jiayu-36.html" class="chapter-item-link"><div class="chapter-item">观乡射第二十八</div></a>
+                    <a href="kongzi-jiayu-37.html" class="chapter-item-link"><div class="chapter-item">郊问第二十九</div></a>
+                    <a href="kongzi-jiayu-38.html" class="chapter-item-link"><div class="chapter-item">五刑解第三十</div></a>
+                    <a href="kongzi-jiayu-39.html" class="chapter-item-link"><div class="chapter-item">刑政第三十一</div></a>
+                    <a href="kongzi-jiayu-40.html" class="chapter-item-link"><div class="chapter-item">礼运第三十二</div></a>
+                    <a href="kongzi-jiayu-41.html" class="chapter-item-link"><div class="chapter-item">卷八</div></a>
+                    <a href="kongzi-jiayu-42.html" class="chapter-item-link"><div class="chapter-item">冠颂第三十三</div></a>
+                    <a href="kongzi-jiayu-43.html" class="chapter-item-link"><div class="chapter-item">庙制第三十四</div></a>
+                    <a href="kongzi-jiayu-44.html" class="chapter-item-link"><div class="chapter-item">辩乐解第三十五</div></a>
+                    <a href="kongzi-jiayu-45.html" class="chapter-item-link"><div class="chapter-item">问玉第三十六</div></a>
+                    <a href="kongzi-jiayu-46.html" class="chapter-item-link"><div class="chapter-item">屈节解第三十七</div></a>
+                    <a href="kongzi-jiayu-47.html" class="chapter-item-link"><div class="chapter-item">卷九</div></a>
+                    <a href="kongzi-jiayu-48.html" class="chapter-item-link"><div class="chapter-item">七十二弟子解第三十八</div></a>
+                    <a href="kongzi-jiayu-49.html" class="chapter-item-link"><div class="chapter-item">本姓解第三十九</div></a>
+                    <a href="kongzi-jiayu-50.html" class="chapter-item-link"><div class="chapter-item">终记解第四十</div></a>
+                    <a href="kongzi-jiayu-51.html" class="chapter-item-link"><div class="chapter-item">正论解第四十一</div></a>
+                    <a href="kongzi-jiayu-52.html" class="chapter-item-link"><div class="chapter-item">卷十</div></a>
+                    <a href="kongzi-jiayu-53.html" class="chapter-item-link"><div class="chapter-item">曲礼子贡问第四十二</div></a>
+                    <a href="kongzi-jiayu-54.html" class="chapter-item-link"><div class="chapter-item">曲礼子夏问第四十三</div></a>
+                    <a href="kongzi-jiayu-55.html" class="chapter-item-link"><div class="chapter-item">曲礼公西赤问第四十四</div></a>
+                    <a href="kongzi-jiayu-56.html" class="chapter-item-link"><div class="chapter-item">后序</div></a>
                 </div>
             </section>
         </div>

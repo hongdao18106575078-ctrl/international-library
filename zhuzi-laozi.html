@@ -27,6 +27,8 @@
         .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
         .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
         .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item-link { text-decoration: none; color: inherit; border-bottom: none; display: block; }
+        .chapter-item-link:hover { border-bottom: none; }
         .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
         @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
     </style>
@@ -69,87 +71,86 @@
             <section class="chapter-section">
                 <h2>篇目</h2>
                 <div class="chapter-grid">
-                    <div class="chapter-item">一章</div>
-                    <div class="chapter-item">二章</div>
-                    <div class="chapter-item">三章</div>
-                    <div class="chapter-item">四章</div>
-                    <div class="chapter-item">五章</div>
-                    <div class="chapter-item">六章</div>
-                    <div class="chapter-item">七章</div>
-                    <div class="chapter-item">八章</div>
-                    <div class="chapter-item">九章</div>
-                    <div class="chapter-item">十章</div>
-                    <div class="chapter-item">十一章</div>
-                    <div class="chapter-item">十二章</div>
-                    <div class="chapter-item">十三章</div>
-                    <div class="chapter-item">十四章</div>
-                    <div class="chapter-item">十五章</div>
-                    <div class="chapter-item">十六章</div>
-                    <div class="chapter-item">十七章</div>
-                    <div class="chapter-item">十八章</div>
-                    <div class="chapter-item">十九章</div>
-                    <div class="chapter-item">二十章</div>
-                    <div class="chapter-item">二十一章</div>
-                    <div class="chapter-item">二十二章</div>
-                    <div class="chapter-item">二十三章</div>
-                    <div class="chapter-item">二十四章</div>
-                    <div class="chapter-item">二十五章</div>
-                    <div class="chapter-item">二十六章</div>
-                    <div class="chapter-item">二十七章</div>
-                    <div class="chapter-item">二十八章</div>
-                    <div class="chapter-item">二十九章</div>
-                    <div class="chapter-item">三十章</div>
-                    <div class="chapter-item">三十一章</div>
-                    <div class="chapter-item">三十二章</div>
-                    <div class="chapter-item">三十三章</div>
-                    <div class="chapter-item">三十四章</div>
-                    <div class="chapter-item">三十五章</div>
-                    <div class="chapter-item">三十六章</div>
-                    <div class="chapter-item">三十七章</div>
-                    <div class="chapter-item">三十八章</div>
-                    <div class="chapter-item">三十九章</div>
-                    <div class="chapter-item">四十章</div>
-                    <div class="chapter-item">四十一章</div>
-                    <div class="chapter-item">四十二章</div>
-                    <div class="chapter-item">四十三章</div>
-                    <div class="chapter-item">四十四章</div>
-                    <div class="chapter-item">四十五章</div>
-                    <div class="chapter-item">四十六章</div>
-                    <div class="chapter-item">四十七章</div>
-                    <div class="chapter-item">四十八章</div>
-                    <div class="chapter-item">四十九章</div>
-                    <div class="chapter-item">五十章</div>
-                    <div class="chapter-item">五十一章</div>
-                    <div class="chapter-item">五十二章</div>
-                    <div class="chapter-item">五十三章</div>
-                    <div class="chapter-item">五十四章</div>
-                    <div class="chapter-item">五十五章</div>
-                    <div class="chapter-item">五十六章</div>
-                    <div class="chapter-item">五十七章</div>
-                    <div class="chapter-item">五十八章</div>
-                    <div class="chapter-item">五十九章</div>
-                    <div class="chapter-item">六十章</div>
-                    <div class="chapter-item">六十一章</div>
-                    <div class="chapter-item">六十二章</div>
-                    <div class="chapter-item">六十三章</div>
-                    <div class="chapter-item">六十四章</div>
-                    <div class="chapter-item">六十五章</div>
-                    <div class="chapter-item">六十六章</div>
-                    <div class="chapter-item">六十七章</div>
-                    <div class="chapter-item">六十八章</div>
-                    <div class="chapter-item">六十九章</div>
-                    <div class="chapter-item">七十章</div>
-                    <div class="chapter-item">七十一章</div>
-                    <div class="chapter-item">七十二章</div>
-                    <div class="chapter-item">七十三章</div>
-                    <div class="chapter-item">七十四章</div>
-                    <div class="chapter-item">七十五章</div>
-                    <div class="chapter-item">七十六章</div>
-                    <div class="chapter-item">七十七章</div>
-                    <div class="chapter-item">七十八章</div>
-                    <div class="chapter-item">七十九章</div>
-                    <div class="chapter-item">八十章</div>
-                    <div class="chapter-item">八十一章</div>
+                    <a href="laozi-01.html" class="chapter-item-link"><div class="chapter-item">一章</div></a>
+                    <a href="laozi-02.html" class="chapter-item-link"><div class="chapter-item">二章</div></a>
+                    <a href="laozi-03.html" class="chapter-item-link"><div class="chapter-item">三章</div></a>
+                    <a href="laozi-04.html" class="chapter-item-link"><div class="chapter-item">四章</div></a>
+                    <a href="laozi-05.html" class="chapter-item-link"><div class="chapter-item">五章</div></a>
+                    <a href="laozi-06.html" class="chapter-item-link"><div class="chapter-item">六章</div></a>
+                    <a href="laozi-07.html" class="chapter-item-link"><div class="chapter-item">七章</div></a>
+                    <a href="laozi-08.html" class="chapter-item-link"><div class="chapter-item">八章</div></a>
+                    <a href="laozi-09.html" class="chapter-item-link"><div class="chapter-item">九章</div></a>
+                    <a href="laozi-10.html" class="chapter-item-link"><div class="chapter-item">十章</div></a>
+                    <a href="laozi-11.html" class="chapter-item-link"><div class="chapter-item">十一章</div></a>
+                    <a href="laozi-12.html" class="chapter-item-link"><div class="chapter-item">十二章</div></a>
+                    <a href="laozi-13.html" class="chapter-item-link"><div class="chapter-item">十三章</div></a>
+                    <a href="laozi-14.html" class="chapter-item-link"><div class="chapter-item">十四章</div></a>
+                    <a href="laozi-15.html" class="chapter-item-link"><div class="chapter-item">十五章</div></a>
+                    <a href="laozi-16.html" class="chapter-item-link"><div class="chapter-item">十六章</div></a>
+                    <a href="laozi-17.html" class="chapter-item-link"><div class="chapter-item">十七章</div></a>
+                    <a href="laozi-18.html" class="chapter-item-link"><div class="chapter-item">十八章</div></a>
+                    <a href="laozi-19.html" class="chapter-item-link"><div class="chapter-item">十九章</div></a>
+                    <a href="laozi-20.html" class="chapter-item-link"><div class="chapter-item">二十章</div></a>
+                    <a href="laozi-21.html" class="chapter-item-link"><div class="chapter-item">二十一章</div></a>
+                    <a href="laozi-22.html" class="chapter-item-link"><div class="chapter-item">二十二章</div></a>
+                    <a href="laozi-23.html" class="chapter-item-link"><div class="chapter-item">二十三章</div></a>
+                    <a href="laozi-24.html" class="chapter-item-link"><div class="chapter-item">二十四章</div></a>
+                    <a href="laozi-25.html" class="chapter-item-link"><div class="chapter-item">二十五章</div></a>
+                    <a href="laozi-26.html" class="chapter-item-link"><div class="chapter-item">二十六章</div></a>
+                    <a href="laozi-27.html" class="chapter-item-link"><div class="chapter-item">二十七章</div></a>
+                    <a href="laozi-28.html" class="chapter-item-link"><div class="chapter-item">二十八章</div></a>
+                    <a href="laozi-29.html" class="chapter-item-link"><div class="chapter-item">二十九章</div></a>
+                    <a href="laozi-30.html" class="chapter-item-link"><div class="chapter-item">三十章</div></a>
+                    <a href="laozi-31.html" class="chapter-item-link"><div class="chapter-item">三十一章</div></a>
+                    <a href="laozi-32.html" class="chapter-item-link"><div class="chapter-item">三十二章</div></a>
+                    <a href="laozi-33.html" class="chapter-item-link"><div class="chapter-item">三十三章</div></a>
+                    <a href="laozi-34.html" class="chapter-item-link"><div class="chapter-item">三十四章</div></a>
+                    <a href="laozi-35.html" class="chapter-item-link"><div class="chapter-item">三十五章</div></a>
+                    <a href="laozi-36.html" class="chapter-item-link"><div class="chapter-item">三十六章</div></a>
+                    <a href="laozi-37.html" class="chapter-item-link"><div class="chapter-item">三十七章</div></a>
+                    <a href="laozi-38.html" class="chapter-item-link"><div class="chapter-item">三十八章</div></a>
+                    <a href="laozi-39.html" class="chapter-item-link"><div class="chapter-item">三十九章</div></a>
+                    <a href="laozi-40.html" class="chapter-item-link"><div class="chapter-item">四十章</div></a>
+                    <a href="laozi-41.html" class="chapter-item-link"><div class="chapter-item">四十一章</div></a>
+                    <a href="laozi-42.html" class="chapter-item-link"><div class="chapter-item">四十二章</div></a>
+                    <a href="laozi-43.html" class="chapter-item-link"><div class="chapter-item">四十三章</div></a>
+                    <a href="laozi-44.html" class="chapter-item-link"><div class="chapter-item">四十四章</div></a>
+                    <a href="laozi-45.html" class="chapter-item-link"><div class="chapter-item">四十五章</div></a>
+                    <a href="laozi-46.html" class="chapter-item-link"><div class="chapter-item">四十六章</div></a>
+                    <a href="laozi-47.html" class="chapter-item-link"><div class="chapter-item">四十七章</div></a>
+                    <a href="laozi-48.html" class="chapter-item-link"><div class="chapter-item">四十八章</div></a>
+                    <a href="laozi-49.html" class="chapter-item-link"><div class="chapter-item">四十九章</div></a>
+                    <a href="laozi-50.html" class="chapter-item-link"><div class="chapter-item">五十章</div></a>
+                    <a href="laozi-51.html" class="chapter-item-link"><div class="chapter-item">五十一章</div></a>
+                    <a href="laozi-52.html" class="chapter-item-link"><div class="chapter-item">五十二章</div></a>
+                    <a href="laozi-53.html" class="chapter-item-link"><div class="chapter-item">五十三章</div></a>
+                    <a href="laozi-54.html" class="chapter-item-link"><div class="chapter-item">五十四章</div></a>
+                    <a href="laozi-55.html" class="chapter-item-link"><div class="chapter-item">五十五章</div></a>
+                    <a href="laozi-56.html" class="chapter-item-link"><div class="chapter-item">五十六章</div></a>
+                    <a href="laozi-57.html" class="chapter-item-link"><div class="chapter-item">五十七章</div></a>
+                    <a href="laozi-58.html" class="chapter-item-link"><div class="chapter-item">五十八章</div></a>
+                    <a href="laozi-59.html" class="chapter-item-link"><div class="chapter-item">五十九章</div></a>
+                    <a href="laozi-60.html" class="chapter-item-link"><div class="chapter-item">六十章</div></a>
+                    <a href="laozi-61.html" class="chapter-item-link"><div class="chapter-item">六十一章</div></a>
+                    <a href="laozi-62.html" class="chapter-item-link"><div class="chapter-item">六十二章</div></a>
+                    <a href="laozi-63.html" class="chapter-item-link"><div class="chapter-item">六十三章</div></a>
+                    <a href="laozi-64.html" class="chapter-item-link"><div class="chapter-item">六十四章</div></a>
+                    <a href="laozi-65.html" class="chapter-item-link"><div class="chapter-item">六十五章</div></a>
+                    <a href="laozi-66.html" class="chapter-item-link"><div class="chapter-item">六十六章</div></a>
+                    <a href="laozi-67.html" class="chapter-item-link"><div class="chapter-item">六十七章</div></a>
+                    <a href="laozi-68.html" class="chapter-item-link"><div class="chapter-item">六十八章</div></a>
+                    <a href="laozi-69.html" class="chapter-item-link"><div class="chapter-item">六十九章</div></a>
+                    <a href="laozi-70.html" class="chapter-item-link"><div class="chapter-item">七十章</div></a>
+                    <a href="laozi-71.html" class="chapter-item-link"><div class="chapter-item">七十一章</div></a>
+                    <a href="laozi-72.html" class="chapter-item-link"><div class="chapter-item">七十二章</div></a>
+                    <a href="laozi-73.html" class="chapter-item-link"><div class="chapter-item">七十三章</div></a>
+                    <a href="laozi-74.html" class="chapter-item-link"><div class="chapter-item">七十四章</div></a>
+                    <a href="laozi-75.html" class="chapter-item-link"><div class="chapter-item">七十五章</div></a>
+                    <a href="laozi-76.html" class="chapter-item-link"><div class="chapter-item">七十六章</div></a>
+                    <a href="laozi-77.html" class="chapter-item-link"><div class="chapter-item">七十七章</div></a>
+                    <a href="laozi-78.html" class="chapter-item-link"><div class="chapter-item">七十八章</div></a>
+                    <a href="laozi-79.html" class="chapter-item-link"><div class="chapter-item">七十九章</div></a>
+                    <a href="laozi-80.html" class="chapter-item-link"><div class="chapter-item">八十章</div></a>
                 </div>
             </section>
         </div>
