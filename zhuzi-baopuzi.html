@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抱朴子内篇 · 阅读资料库</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page-header {background: linear-gradient(180deg, var(--paper-warm) 0%, var(--paper) 100%); padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--border-light);}
+        .breadcrumb {font-size: 0.85rem; color: var(--ink-light); margin-bottom: 0.8rem;}
+        .breadcrumb a {color: var(--ink-light); border-bottom: none;}
+        .breadcrumb a:hover {color: var(--accent);}
+        .breadcrumb span {margin: 0 0.4rem;}
+        .book-hero {display: flex; gap: 2rem; align-items: flex-start; margin-top: 1rem;}
+        .book-cover {flex-shrink: 0; width: 160px; height: 220px; border: 1px solid var(--border-light); background: var(--paper-warm); display: flex; align-items: center; justify-content: center; font-family: 'Noto Serif SC', serif; font-size: 1.8rem; color: var(--ink-light); letter-spacing: 0.1em;}
+        .book-info {flex: 1;}
+        .book-info h1 {font-family: 'Noto Serif SC', serif; font-size: 2.2rem; font-weight: 700; color: var(--ink-black); letter-spacing: 0.08em; margin-bottom: 0.3rem;}
+        .book-meta {font-size: 0.85rem; color: var(--ink-light); margin-bottom: 1rem; line-height: 1.8;}
+        .book-meta strong {color: var(--ink-gray); font-weight: 500;}
+        .book-desc {font-size: 0.95rem; color: var(--ink-dark); line-height: 2; margin-bottom: 1.2rem;}
+        .download-area {display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;}
+        .download-btn {display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.5rem; border: 1px solid var(--accent); color: var(--accent); font-family: 'Noto Serif SC', serif; font-size: 0.9rem; transition: all 0.3s ease;}
+        .download-btn:hover {background: var(--accent); color: #fff; border-bottom-color: var(--accent);}
+        .download-btn .small {font-size: 0.75rem; opacity: 0.7;}
+        .chapter-section {margin-top: 2rem;}
+        .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
+        .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
+        .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
+        @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">阅读资料库</a>
+                <span>／</span>
+                <a href="index.html#philosophy">哲学</a>
+                <span>／</span>
+                <a href="zhuzi-baijia.html">先秦诸子百家</a>
+                <span>／</span>
+                抱朴子内篇
+            </div>
+            <div class="book-hero">
+                <div class="book-cover">抱朴子内篇</div>
+                <div class="book-info">
+                    <h1>抱朴子内篇</h1>
+                    <div class="book-meta">
+                        <strong>著者：</strong>葛洪<br>
+                        <strong>时代：</strong>公元4世纪（东晋）<br>
+                        <strong>篇数：</strong>二十卷<br>
+                        <strong>版本：</strong>中华书局 · 全本全注全译
+                    </div>
+                    <div class="book-desc">《抱朴子内篇》是道教经典，东晋葛洪所著。系统论述了神仙道教的理论与实践，包括道教宇宙观、养生术、炼丹术等，是研究中国道教史和古代科技史的重要文献。</div>
+                    <div class="download-area">
+                        <a href="books/zhuzi-baijia/诸子百家系列套装.epub" download class="download-btn">
+                            📥 下载 EPUB
+                            <span class="small">（含诸子百家全二十种）</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <section class="chapter-section">
+                <h2>篇目</h2>
+                <div class="chapter-grid">
+                    <div class="chapter-item">畅玄卷一</div>
+                    <div class="chapter-item">论仙卷二</div>
+                    <div class="chapter-item">对俗卷三</div>
+                    <div class="chapter-item">金丹卷四</div>
+                    <div class="chapter-item">至理卷五</div>
+                    <div class="chapter-item">微旨卷六</div>
+                    <div class="chapter-item">塞难卷七</div>
+                    <div class="chapter-item">释滞卷八</div>
+                    <div class="chapter-item">道意卷九</div>
+                    <div class="chapter-item">明本卷十</div>
+                    <div class="chapter-item">仙药卷十一</div>
+                    <div class="chapter-item">辨问卷十二</div>
+                    <div class="chapter-item">极言卷十三</div>
+                    <div class="chapter-item">勤求卷十四</div>
+                    <div class="chapter-item">杂应卷十五</div>
+                    <div class="chapter-item">黄白卷十六</div>
+                    <div class="chapter-item">登涉卷十七</div>
+                    <div class="chapter-item">地真卷十八</div>
+                    <div class="chapter-item">遐览卷十九</div>
+                    <div class="chapter-item">祛惑卷二十</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-quote">"我命在我不在天。"</p>
+                <p class="footer-motto">阅读资料库 · 自由阅读 · 自由思想</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

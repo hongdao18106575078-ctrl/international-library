@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淮南子 · 阅读资料库</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page-header {background: linear-gradient(180deg, var(--paper-warm) 0%, var(--paper) 100%); padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--border-light);}
+        .breadcrumb {font-size: 0.85rem; color: var(--ink-light); margin-bottom: 0.8rem;}
+        .breadcrumb a {color: var(--ink-light); border-bottom: none;}
+        .breadcrumb a:hover {color: var(--accent);}
+        .breadcrumb span {margin: 0 0.4rem;}
+        .book-hero {display: flex; gap: 2rem; align-items: flex-start; margin-top: 1rem;}
+        .book-cover {flex-shrink: 0; width: 160px; height: 220px; border: 1px solid var(--border-light); background: var(--paper-warm); display: flex; align-items: center; justify-content: center; font-family: 'Noto Serif SC', serif; font-size: 1.8rem; color: var(--ink-light); letter-spacing: 0.1em;}
+        .book-info {flex: 1;}
+        .book-info h1 {font-family: 'Noto Serif SC', serif; font-size: 2.2rem; font-weight: 700; color: var(--ink-black); letter-spacing: 0.08em; margin-bottom: 0.3rem;}
+        .book-meta {font-size: 0.85rem; color: var(--ink-light); margin-bottom: 1rem; line-height: 1.8;}
+        .book-meta strong {color: var(--ink-gray); font-weight: 500;}
+        .book-desc {font-size: 0.95rem; color: var(--ink-dark); line-height: 2; margin-bottom: 1.2rem;}
+        .download-area {display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;}
+        .download-btn {display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.5rem; border: 1px solid var(--accent); color: var(--accent); font-family: 'Noto Serif SC', serif; font-size: 0.9rem; transition: all 0.3s ease;}
+        .download-btn:hover {background: var(--accent); color: #fff; border-bottom-color: var(--accent);}
+        .download-btn .small {font-size: 0.75rem; opacity: 0.7;}
+        .chapter-section {margin-top: 2rem;}
+        .chapter-section h2 {font-family: 'Noto Serif SC', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.08em; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-light); margin-bottom: 1rem;}
+        .chapter-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.6rem;}
+        .chapter-item {background: var(--paper-card); border: 1px solid var(--border-subtle); padding: 0.5rem 0.8rem; text-align: center; font-size: 0.85rem; color: var(--ink-dark); transition: all 0.3s ease; font-family: 'Noto Serif SC', serif;}
+        .chapter-item:hover {border-color: var(--accent-gold); background: var(--paper-warm);}
+        @media (max-width: 768px) {.book-hero {flex-direction: column;} .book-cover {width: 120px; height: 165px; font-size: 1.4rem;} .book-info h1 {font-size: 1.6rem;} .chapter-grid {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));}}
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">阅读资料库</a>
+                <span>／</span>
+                <a href="index.html#philosophy">哲学</a>
+                <span>／</span>
+                <a href="zhuzi-baijia.html">先秦诸子百家</a>
+                <span>／</span>
+                淮南子
+            </div>
+            <div class="book-hero">
+                <div class="book-cover">淮南子</div>
+                <div class="book-info">
+                    <h1>淮南子</h1>
+                    <div class="book-meta">
+                        <strong>著者：</strong>刘安<br>
+                        <strong>时代：</strong>公元前2世纪（西汉）<br>
+                        <strong>篇数：</strong>二十一卷<br>
+                        <strong>版本：</strong>中华书局 · 全本全注全译
+                    </div>
+                    <div class="book-desc">《淮南子》是西汉淮南王刘安组织门客编纂的杂家巨著。以道家为主，糅合儒、法、阴阳各家，内容涵盖宇宙观、政治哲学、军事思想、科学知识等，是汉代思想最为博大的著作之一。</div>
+                    <div class="download-area">
+                        <a href="books/zhuzi-baijia/诸子百家系列套装.epub" download class="download-btn">
+                            📥 下载 EPUB
+                            <span class="small">（含诸子百家全二十种）</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <section class="chapter-section">
+                <h2>篇目</h2>
+                <div class="chapter-grid">
+                    <div class="chapter-item">原道训</div>
+                    <div class="chapter-item">俶真训</div>
+                    <div class="chapter-item">天文训</div>
+                    <div class="chapter-item">地形训</div>
+                    <div class="chapter-item">时则训</div>
+                    <div class="chapter-item">览冥训</div>
+                    <div class="chapter-item">精神训</div>
+                    <div class="chapter-item">本经训</div>
+                    <div class="chapter-item">主术训</div>
+                    <div class="chapter-item">缪称训</div>
+                    <div class="chapter-item">齐俗训</div>
+                    <div class="chapter-item">道应训</div>
+                    <div class="chapter-item">氾论训</div>
+                    <div class="chapter-item">诠言训</div>
+                    <div class="chapter-item">兵略训</div>
+                    <div class="chapter-item">说山训</div>
+                    <div class="chapter-item">说林训</div>
+                    <div class="chapter-item">人间训</div>
+                    <div class="chapter-item">脩务训</div>
+                    <div class="chapter-item">泰族训</div>
+                    <div class="chapter-item">要略</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-quote">"公正无私，一言而万民齐。"</p>
+                <p class="footer-motto">阅读资料库 · 自由阅读 · 自由思想</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
