@@ -333,3 +333,338 @@ a:hover {
     .site-title { font-size: 1.5rem; }
     .logo-icon { font-size: 1.6rem; }
 }
+
+/* ============================================
+   篇章内容样式 · 正文突出 · 辅文统一
+   三级字号层级：标题(1.6) > 正文(1.25) > 辅文(0.95)
+   ============================================ */
+
+/* --- 篇章页头部 --- */
+.page-header {
+    background: linear-gradient(180deg, var(--paper-warm) 0%, var(--paper) 100%);
+    padding: 2rem 0 1rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+    margin-bottom: 0.8rem;
+}
+.breadcrumb a {
+    color: var(--ink-light);
+    border-bottom: none;
+}
+.breadcrumb a:hover {
+    color: var(--accent);
+}
+.breadcrumb span {
+    margin: 0 0.4rem;
+}
+
+/* --- 篇章内容容器 --- */
+.chapter-content {
+    font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* --- L1: 篇章标题 --- */
+.chapter-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--ink-black);
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border-light);
+}
+
+/* --- L2: 正文原文 —— 页面主角，最突出 --- */
+.original-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-indent: 2em;
+    margin: 1.2em 0;
+    line-height: 2.5;
+}
+
+/* --- L3: 段落标签 —— 统一字号，加粗区分 --- */
+.section-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #8b6914;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    letter-spacing: 0.05em;
+}
+
+/* --- L4: 辅文 —— 译文、注释、题解统一 0.95rem --- */
+
+/* 题解：左侧边框 + 略浅色 */
+.intro-text {
+    font-size: 0.95rem;
+    color: #5a5a5a;
+    text-indent: 2em;
+    margin: 0.6em 0;
+    line-height: 2.1;
+    border-left: 3px solid #d5c8b0;
+    padding-left: 1em;
+}
+
+/* 译文：中等灰度，首行缩进 */
+.trans-text {
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    text-indent: 2em;
+    margin: 0.6em 0;
+    line-height: 2.1;
+}
+
+/* 注释：悬挂缩进，略浅于译文 */
+.note-item {
+    font-size: 0.95rem;
+    color: #5a5a5a;
+    margin: 0.35em 0 0.35em 1.5em;
+    line-height: 2.0;
+}
+
+/* --- 段落间距规则：确保不同内容块之间界限清晰 --- */
+
+/* 译文/注释结束后 → 新一段原文：加大间距，明确分隔 */
+.trans-text + .original-text,
+.note-item + .original-text,
+.trans-text + .trans-text,
+.note-item + .trans-text {
+    margin-top: 1.8em;
+}
+
+/* 原文结束后 → 注释标签：保持适度间距 */
+.original-text + .section-label {
+    margin-top: 1.5em;
+}
+
+/* 上标注释编号 */
+.super-num {
+    vertical-align: super;
+    font-size: 0.7em;
+    color: #8b6914;
+}
+
+/* 返回链接 */
+.back-link {
+    display: inline-block;
+    margin-top: 2.5rem;
+    color: #8b6914;
+    font-size: 0.9rem;
+}
+.back-link:hover {
+    color: #a8842a;
+}
+
+/* --- 篇章响应式 --- */
+@media (max-width: 768px) {
+    .chapter-content {
+        padding: 1.5rem 0.8rem;
+    }
+    .chapter-title {
+        font-size: 1.4rem;
+    }
+    .original-text {
+        font-size: 1.15rem;
+        line-height: 2.3;
+    }
+    .intro-text,
+    .trans-text,
+    .note-item,
+    .section-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   首页看板画廊 · Notion 风格学科卡片
+   ============================================ */
+
+/* --- 卡片网格 --- */
+.board-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    padding-bottom: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* --- 单张卡片 --- */
+.board-card {
+    background: var(--paper-card);
+    border: 1px solid var(--border-subtle);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.board-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+    border-color: var(--border-light);
+}
+.board-card:active {
+    transform: translateY(-2px);
+}
+
+/* --- 卡片占位图区 --- */
+.board-card-cover {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.board-card-cover-icon {
+    font-size: 2.4rem;
+    opacity: 0.85;
+    z-index: 1;
+}
+.board-card-cover.has-image .board-card-cover-icon {
+    display: none;
+}
+.board-card-cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+}
+.board-card-cover.has-image::after {
+    background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 100%);
+}
+
+/* 封面编辑按钮 */
+.board-card-cover-edit {
+    position: absolute;
+    bottom: 6px;
+    right: 8px;
+    z-index: 2;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.board-card-cover:hover .board-card-cover-edit {
+    opacity: 1;
+}
+.board-card-cover-edit:hover {
+    background: rgba(0,0,0,0.65);
+}
+
+/* 封面有图片时，轻提示重置 */
+.board-card-cover-reset {
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
+    z-index: 2;
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    border: none;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.board-card-cover:hover .board-card-cover-reset {
+    opacity: 1;
+}
+.board-card-cover-reset:hover {
+    background: rgba(180,60,60,0.7);
+}
+
+/* 各学科封面底色 */
+.board-card.philosophy .board-card-cover   { background-color: #f5efe0; }
+.board-card.history .board-card-cover      { background-color: #efe4d5; }
+.board-card.literature .board-card-cover   { background-color: #e2e6ef; }
+.board-card.politics .board-card-cover     { background-color: #f0e0e0; }
+.board-card.economics .board-card-cover    { background-color: #dfece5; }
+.board-card.sociology .board-card-cover    { background-color: #f5ece0; }
+.board-card.science .board-card-cover      { background-color: #dce8f2; }
+.board-card.art .board-card-cover          { background-color: #f0e2ea; }
+.board-card.anthropology .board-card-cover { background-color: #dceae5; }
+.board-card.psychology .board-card-cover   { background-color: #e8e0f0; }
+.board-card.business .board-card-cover     { background-color: #d5e5f0; }
+
+/* 各学科卡片 hover 边框色 */
+.board-card.philosophy:hover   { border-color: #c8a96e; }
+.board-card.history:hover      { border-color: #b8956e; }
+.board-card.literature:hover   { border-color: #7b8faa; }
+.board-card.politics:hover     { border-color: #b87070; }
+.board-card.economics:hover    { border-color: #6ea88a; }
+.board-card.sociology:hover    { border-color: #c89870; }
+.board-card.science:hover      { border-color: #6b8faa; }
+.board-card.art:hover          { border-color: #b87090; }
+.board-card.anthropology:hover { border-color: #5e9b86; }
+.board-card.psychology:hover   { border-color: #8b70b0; }
+.board-card.business:hover     { border-color: #5b8aad; }
+
+/* --- 卡片内容区 --- */
+.board-card-body {
+    padding: 1rem 1.1rem 1.2rem;
+}
+.board-card-title {
+    font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink-black);
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.05em;
+}
+.board-card-desc {
+    font-size: 0.78rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+}
+
+/* --- 卡片标签 --- */
+.board-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+.board-card-tag {
+    font-size: 0.68rem;
+    font-weight: 400;
+    color: var(--ink-light);
+    background: var(--tag-bg);
+    padding: 0.1rem 0.55rem;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* --- 看板画廊响应式 --- */
+@media (max-width: 900px) {
+    .board-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+    .board-gallery { grid-template-columns: 1fr; gap: 0.8rem; }
+    .board-card-cover { height: 80px; }
+    .board-card-cover-icon { font-size: 2rem; }
+    .board-card-body { padding: 0.8rem; }
+}

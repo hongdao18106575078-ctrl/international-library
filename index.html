@@ -26,16 +26,13 @@
     <nav class="discipline-nav" id="disciplineNav">
         <div class="container">
             <div class="nav-wrapper">
-                <button class="nav-btn active" data-discipline="philosophy">哲学</button>
-                <button class="nav-btn" data-discipline="history">历史学</button>
+                <button class="nav-btn active" data-discipline="home">首页</button>
+                <button class="nav-btn" data-discipline="philosophy">哲学</button>
+                <button class="nav-btn" data-discipline="history">历史</button>
                 <button class="nav-btn" data-discipline="literature">文学</button>
-                <button class="nav-btn" data-discipline="politics">政治学</button>
-                <button class="nav-btn" data-discipline="economics">经济学</button>
-                <button class="nav-btn" data-discipline="sociology">社会学</button>
-                <button class="nav-btn" data-discipline="science">科学技术</button>
                 <button class="nav-btn" data-discipline="art">艺术</button>
-                <button class="nav-btn" data-discipline="anthropology">人类学</button>
-                <button class="nav-btn" data-discipline="psychology">心理学</button>
+                <button class="nav-btn" data-discipline="politics-economy">政治与经济</button>
+                <button class="nav-btn" data-discipline="business">商业与管理</button>
             </div>
         </div>
     </nav>
@@ -44,8 +41,83 @@
     <main class="main-content">
         <div class="container">
 
+            <!-- 首页 · 学科看板画廊 -->
+            <section class="discipline-section active" id="home">
+                <h2 class="discipline-title">栏目导航</h2>
+                <p class="discipline-subtitle">点击卡片进入栏目 · 探索人类知识的版图</p>
+                <div class="board-gallery">
+
+                    <div class="board-card philosophy" onclick="document.querySelector('[data-discipline=philosophy]').click();">
+                        <div class="board-card-cover"><span class="board-card-cover-icon">🏛️</span></div>
+                        <div class="board-card-body">
+                            <div class="board-card-title">哲学</div>
+                            <div class="board-card-desc">爱智慧 · 追问一切存在的根基</div>
+                            <div class="board-card-tags">
+                                <span class="board-card-tag">中国哲学</span><span class="board-card-tag">西方哲学</span><span class="board-card-tag">印度哲学</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board-card history" onclick="document.querySelector('[data-discipline=history]').click();">
+                        <div class="board-card-cover"><span class="board-card-cover-icon">📜</span></div>
+                        <div class="board-card-body">
+                            <div class="board-card-title">历史</div>
+                            <div class="board-card-desc">以史为鉴 · 理解人类变迁的宏大叙事</div>
+                            <div class="board-card-tags">
+                                <span class="board-card-tag">中国史</span><span class="board-card-tag">世界史</span><span class="board-card-tag">专门史</span><span class="board-card-tag">史学理论</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board-card literature" onclick="document.querySelector('[data-discipline=literature]').click();">
+                        <div class="board-card-cover"><span class="board-card-cover-icon">📖</span></div>
+                        <div class="board-card-body">
+                            <div class="board-card-title">文学</div>
+                            <div class="board-card-desc">人学 · 灵魂的语言 · 民族的记忆</div>
+                            <div class="board-card-tags">
+                                <span class="board-card-tag">中国文学</span><span class="board-card-tag">俄国文学</span><span class="board-card-tag">日本文学</span><span class="board-card-tag">欧美文学</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board-card art" onclick="document.querySelector('[data-discipline=art]').click();">
+                        <div class="board-card-cover"><span class="board-card-cover-icon">🎨</span></div>
+                        <div class="board-card-body">
+                            <div class="board-card-title">艺术</div>
+                            <div class="board-card-desc">感性之眼 · 美是自由的象征</div>
+                            <div class="board-card-tags">
+                                <span class="board-card-tag">美术史</span><span class="board-card-tag">音乐</span><span class="board-card-tag">电影戏剧</span><span class="board-card-tag">美学</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board-card politics" onclick="document.querySelector('[data-discipline=politics-economy]').click();">
+                        <div class="board-card-cover"><span class="board-card-cover-icon">⚖️</span></div>
+                        <div class="board-card-body">
+                            <div class="board-card-title">政治与经济</div>
+                            <div class="board-card-desc">权力 · 市场 · 治理与发展</div>
+                            <div class="board-card-tags">
+                                <span class="board-card-tag">政治思想</span><span class="board-card-tag">国际关系</span><span class="board-card-tag">经济理论</span><span class="board-card-tag">发展经济学</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board-card business" onclick="document.querySelector('[data-discipline=business]').click();">
+                        <div class="board-card-cover"><span class="board-card-cover-icon">💼</span></div>
+                        <div class="board-card-body">
+                            <div class="board-card-title">商业与管理</div>
+                            <div class="board-card-desc">战略 · 创新 · 组织与领导力</div>
+                            <div class="board-card-tags">
+                                <span class="board-card-tag">管理经典</span><span class="board-card-tag">商业战略</span><span class="board-card-tag">创新与创业</span><span class="board-card-tag">市场营销</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             <!-- 哲学 -->
-            <section class="discipline-section active" id="philosophy">
+            <section class="discipline-section" id="philosophy">
                 <h2 class="discipline-title">哲学</h2>
                 <p class="discipline-subtitle">爱智慧 · 追问一切存在的根基</p>
                 <div class="sub-disciplines">
@@ -56,24 +128,6 @@
                             <li><a href="#">宋明理学</a><span class="tag">研究</span></li>
                             <li><a href="#">中国现代哲学</a><span class="tag">当代</span></li>
                             <li><a href="#">佛教中国化</a><span class="tag">宗教哲学</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">日本哲学</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">京都学派</a><span class="tag">现代</span></li>
-                            <li><a href="#">日本佛教哲学</a><span class="tag">宗教</span></li>
-                            <li><a href="#">西田几多郎</a><span class="tag">原著</span></li>
-                            <li><a href="#">日本儒学</a><span class="tag">东亚比较</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">俄国哲学</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">白银时代宗教哲学</a><span class="tag">经典</span></li>
-                            <li><a href="#">陀思妥耶夫斯基哲学</a><span class="tag">文学哲学</span></li>
-                            <li><a href="#">索洛维约夫全集</a><span class="tag">原著</span></li>
-                            <li><a href="#">苏联马克思主义哲学</a><span class="tag">思想史</span></li>
                         </ul>
                     </div>
                     <div class="sub-card">
@@ -101,12 +155,28 @@
                             <li><a href="#">现代伊斯兰思想</a><span class="tag">当代</span></li>
                         </ul>
                     </div>
+                    <div class="sub-card">
+                        <h3 class="sub-title">日本哲学</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">京都学派</a><span class="tag">现代</span></li>
+                            <li><a href="#">日本佛教哲学</a><span class="tag">宗教</span></li>
+                            <li><a href="#">西田几多郎</a><span class="tag">原著</span></li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h3 class="sub-title">俄国哲学</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">白银时代宗教哲学</a><span class="tag">经典</span></li>
+                            <li><a href="#">陀思妥耶夫斯基哲学</a><span class="tag">文学哲学</span></li>
+                            <li><a href="#">索洛维约夫全集</a><span class="tag">原著</span></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <!-- 历史学 -->
+            <!-- 历史 -->
             <section class="discipline-section" id="history">
-                <h2 class="discipline-title">历史学</h2>
+                <h2 class="discipline-title">历史</h2>
                 <p class="discipline-subtitle">以史为鉴 · 理解人类变迁的宏大叙事</p>
                 <div class="sub-disciplines">
                     <div class="sub-card">
@@ -138,7 +208,7 @@
                         </ul>
                     </div>
                     <div class="sub-card">
-                        <h3 class="sub-title">历史理论与史学史</h3>
+                        <h3 class="sub-title">历史理论</h3>
                         <ul class="resource-list">
                             <li><a href="#">历史哲学</a><span class="tag">理论</span></li>
                             <li><a href="#">史学方法</a><span class="tag">方法</span></li>
@@ -200,144 +270,6 @@
                 </div>
             </section>
 
-            <!-- 政治学 -->
-            <section class="discipline-section" id="politics">
-                <h2 class="discipline-title">政治学</h2>
-                <p class="discipline-subtitle">正义 · 权力 · 共同体</p>
-                <div class="sub-disciplines">
-                    <div class="sub-card">
-                        <h3 class="sub-title">政治思想史</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">西方政治思想</a><span class="tag">经典</span></li>
-                            <li><a href="#">中国政治思想</a><span class="tag">传统</span></li>
-                            <li><a href="#">马克思主义政治理论</a><span class="tag">经典</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">比较政治</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">政治制度比较</a><span class="tag">方法</span></li>
-                            <li><a href="#">发展政治学</a><span class="tag">前沿</span></li>
-                            <li><a href="#">各国政治</a><span class="tag">区域</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">国际关系</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">国际关系理论</a><span class="tag">理论</span></li>
-                            <li><a href="#">全球治理</a><span class="tag">当代</span></li>
-                            <li><a href="#">国际政治经济学</a><span class="tag">交叉</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 经济学 -->
-            <section class="discipline-section" id="economics">
-                <h2 class="discipline-title">经济学</h2>
-                <p class="discipline-subtitle">稀缺 · 选择 · 繁荣</p>
-                <div class="sub-disciplines">
-                    <div class="sub-card">
-                        <h3 class="sub-title">经济思想史</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">古典经济学</a><span class="tag">经典</span></li>
-                            <li><a href="#">马克思主义经济学</a><span class="tag">经典</span></li>
-                            <li><a href="#">奥地利学派</a><span class="tag">流派</span></li>
-                            <li><a href="#">凯恩斯主义</a><span class="tag">流派</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">政治经济学</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">资本主义研究</a><span class="tag">批判</span></li>
-                            <li><a href="#">发展经济学</a><span class="tag">应用</span></li>
-                            <li><a href="#">世界体系理论</a><span class="tag">宏观</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">应用经济学</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">制度经济学</a><span class="tag">制度</span></li>
-                            <li><a href="#">行为经济学</a><span class="tag">前沿</span></li>
-                            <li><a href="#">国际经济</a><span class="tag">全球</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 社会学 -->
-            <section class="discipline-section" id="sociology">
-                <h2 class="discipline-title">社会学</h2>
-                <p class="discipline-subtitle">社会何以可能 · 现代性的诊断</p>
-                <div class="sub-disciplines">
-                    <div class="sub-card">
-                        <h3 class="sub-title">社会学理论</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">经典社会学</a><span class="tag">奠基</span></li>
-                            <li><a href="#">现代社会学理论</a><span class="tag">20世纪</span></li>
-                            <li><a href="#">当代社会学理论</a><span class="tag">前沿</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">社会分层与不平等</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">阶级与阶层</a><span class="tag">经典</span></li>
-                            <li><a href="#">种族与族群</a><span class="tag">批判</span></li>
-                            <li><a href="#">性别社会学</a><span class="tag">前沿</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">文化社会学</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">知识社会学</a><span class="tag">思想</span></li>
-                            <li><a href="#">媒介与传播</a><span class="tag">当代</span></li>
-                            <li><a href="#">全球化与文化</a><span class="tag">全球</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">城市与乡村</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">城市社会学</a><span class="tag">空间</span></li>
-                            <li><a href="#">农村社会学</a><span class="tag">乡土</span></li>
-                            <li><a href="#">移民与流动</a><span class="tag">前沿</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 科学技术 -->
-            <section class="discipline-section" id="science">
-                <h2 class="discipline-title">科学技术</h2>
-                <p class="discipline-subtitle">认识自然 · 改造世界 · 反思技术</p>
-                <div class="sub-disciplines">
-                    <div class="sub-card">
-                        <h3 class="sub-title">科学史</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">古代科学</a><span class="tag">通史</span></li>
-                            <li><a href="#">科学革命</a><span class="tag">近代</span></li>
-                            <li><a href="#">20世纪科学史</a><span class="tag">现代</span></li>
-                            <li><a href="#">中国科技史</a><span class="tag">区域</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">科学哲学与技术哲学</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">科学哲学经典</a><span class="tag">理论</span></li>
-                            <li><a href="#">技术哲学</a><span class="tag">反思</span></li>
-                            <li><a href="#">科学知识社会学</a><span class="tag">交叉</span></li>
-                        </ul>
-                    </div>
-                    <div class="sub-card">
-                        <h3 class="sub-title">科学技术与社会</h3>
-                        <ul class="resource-list">
-                            <li><a href="#">STS 经典阅读</a><span class="tag">前沿</span></li>
-                            <li><a href="#">数字社会批判</a><span class="tag">当代</span></li>
-                            <li><a href="#">人工智能伦理</a><span class="tag">前沿</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
             <!-- 艺术 -->
             <section class="discipline-section" id="art">
                 <h2 class="discipline-title">艺术</h2>
@@ -378,69 +310,107 @@
                 </div>
             </section>
 
-            <!-- 人类学 -->
-            <section class="discipline-section" id="anthropology">
-                <h2 class="discipline-title">人类学</h2>
-                <p class="discipline-subtitle">理解他者 · 反思自我 · 文化的阐释</p>
+            <!-- 政治与经济 -->
+            <section class="discipline-section" id="politics-economy">
+                <h2 class="discipline-title">政治与经济</h2>
+                <p class="discipline-subtitle">权力 · 市场 · 治理与发展</p>
                 <div class="sub-disciplines">
                     <div class="sub-card">
-                        <h3 class="sub-title">文化人类学</h3>
+                        <h3 class="sub-title">政治思想史</h3>
                         <ul class="resource-list">
-                            <li><a href="#">经典民族志</a><span class="tag">田野</span></li>
-                            <li><a href="#">亲属制度</a><span class="tag">经典</span></li>
-                            <li><a href="#">宗教人类学</a><span class="tag">象征</span></li>
+                            <li><a href="#">西方政治思想</a><span class="tag">经典</span></li>
+                            <li><a href="#">中国政治思想</a><span class="tag">传统</span></li>
+                            <li><a href="#">马克思主义政治理论</a><span class="tag">经典</span></li>
                         </ul>
                     </div>
                     <div class="sub-card">
-                        <h3 class="sub-title">社会人类学</h3>
+                        <h3 class="sub-title">国际关系</h3>
                         <ul class="resource-list">
-                            <li><a href="#">英国结构功能主义</a><span class="tag">经典</span></li>
-                            <li><a href="#">法国结构主义</a><span class="tag">理论</span></li>
-                            <li><a href="#">政治人类学</a><span class="tag">权力</span></li>
+                            <li><a href="#">国际关系理论</a><span class="tag">理论</span></li>
+                            <li><a href="#">全球治理</a><span class="tag">当代</span></li>
+                            <li><a href="#">地缘政治</a><span class="tag">战略</span></li>
                         </ul>
                     </div>
                     <div class="sub-card">
-                        <h3 class="sub-title">人类学理论</h3>
+                        <h3 class="sub-title">经济思想史</h3>
                         <ul class="resource-list">
-                            <li><a href="#">进化论与传播论</a><span class="tag">早期</span></li>
-                            <li><a href="#">阐释人类学</a><span class="tag">当代</span></li>
-                            <li><a href="#">本体论转向</a><span class="tag">前沿</span></li>
+                            <li><a href="#">古典经济学</a><span class="tag">经典</span></li>
+                            <li><a href="#">马克思主义经济学</a><span class="tag">经典</span></li>
+                            <li><a href="#">奥地利学派</a><span class="tag">流派</span></li>
+                            <li><a href="#">凯恩斯主义</a><span class="tag">流派</span></li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h3 class="sub-title">政治经济学</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">资本主义研究</a><span class="tag">批判</span></li>
+                            <li><a href="#">发展经济学</a><span class="tag">应用</span></li>
+                            <li><a href="#">世界体系理论</a><span class="tag">宏观</span></li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h3 class="sub-title">比较政治</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">政治制度比较</a><span class="tag">方法</span></li>
+                            <li><a href="#">民主理论</a><span class="tag">理论</span></li>
+                            <li><a href="#">威权与转型</a><span class="tag">前沿</span></li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- 心理学 -->
-            <section class="discipline-section" id="psychology">
-                <h2 class="discipline-title">心理学</h2>
-                <p class="discipline-subtitle">认识你自己 · 心灵的奥秘</p>
+            <!-- 商业与管理 -->
+            <section class="discipline-section" id="business">
+                <h2 class="discipline-title">商业与管理</h2>
+                <p class="discipline-subtitle">战略 · 创新 · 组织与领导力</p>
                 <div class="sub-disciplines">
                     <div class="sub-card">
-                        <h3 class="sub-title">心理学史与流派</h3>
+                        <h3 class="sub-title">管理学经典</h3>
                         <ul class="resource-list">
-                            <li><a href="#">精神分析</a><span class="tag">经典</span></li>
-                            <li><a href="#">行为主义</a><span class="tag">经典</span></li>
-                            <li><a href="#">人本主义</a><span class="tag">经典</span></li>
-                            <li><a href="#">认知心理学</a><span class="tag">当代</span></li>
+                            <li><a href="#">科学管理</a><span class="tag">奠基</span></li>
+                            <li><a href="#">现代管理理论</a><span class="tag">经典</span></li>
+                            <li><a href="#">领导力研究</a><span class="tag">前沿</span></li>
+                            <li><a href="#">企业文化</a><span class="tag">组织</span></li>
                         </ul>
                     </div>
                     <div class="sub-card">
-                        <h3 class="sub-title">社会与文化心理学</h3>
+                        <h3 class="sub-title">商业战略</h3>
                         <ul class="resource-list">
-                            <li><a href="#">跨文化心理学</a><span class="tag">比较</span></li>
-                            <li><a href="#">群体心理学</a><span class="tag">经典</span></li>
-                            <li><a href="#">文化心理</a><span class="tag">前沿</span></li>
+                            <li><a href="#">竞争战略</a><span class="tag">经典</span></li>
+                            <li><a href="#">蓝海战略</a><span class="tag">创新</span></li>
+                            <li><a href="#">商业模式</a><span class="tag">设计</span></li>
+                            <li><a href="#">企业并购</a><span class="tag">资本</span></li>
                         </ul>
                     </div>
                     <div class="sub-card">
-                        <h3 class="sub-title">发展心理学</h3>
+                        <h3 class="sub-title">市场营销</h3>
                         <ul class="resource-list">
-                            <li><a href="#">儿童发展</a><span class="tag">经典</span></li>
-                            <li><a href="#">毕生发展</a><span class="tag">前沿</span></li>
+                            <li><a href="#">品牌管理</a><span class="tag">战略</span></li>
+                            <li><a href="#">消费者行为</a><span class="tag">心理</span></li>
+                            <li><a href="#">数字营销</a><span class="tag">当代</span></li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h3 class="sub-title">创新与创业</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">颠覆性创新</a><span class="tag">理论</span></li>
+                            <li><a href="#">精益创业</a><span class="tag">方法</span></li>
+                            <li><a href="#">硅谷文化</a><span class="tag">案例</span></li>
+                            <li><a href="#">风险投资</a><span class="tag">资本</span></li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h3 class="sub-title">组织行为学</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">组织理论</a><span class="tag">经典</span></li>
+                            <li><a href="#">团队管理</a><span class="tag">实践</span></li>
+                            <li><a href="#">激励机制</a><span class="tag">制度</span></li>
                         </ul>
                     </div>
                 </div>
             </section>
+
+
 
         </div>
     </main>
@@ -456,6 +426,84 @@
         </div>
     </footer>
 
+    <script>
+        // ===== 看板卡片封面图片管理（本地上传） =====
+        (function() {
+            // 隐藏的文件上传 input
+            var fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            fileInput.style.display = 'none';
+            document.body.appendChild(fileInput);
+            var pendingKey = null;
+
+            fileInput.addEventListener('change', function() {
+                if (!fileInput.files || !fileInput.files[0] || !pendingKey) return;
+                var file = fileInput.files[0];
+                if (file.size > 5 * 1024 * 1024) { alert('图片不能超过 5MB'); pendingKey = null; return; }
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var dataUrl = e.target.result;
+                    localStorage.setItem('cover-' + pendingKey, dataUrl);
+                    applyCover(pendingKey, dataUrl);
+                    pendingKey = null;
+                };
+                reader.readAsDataURL(file);
+            });
+
+            function applyCover(key, dataUrl) {
+                var covers = document.querySelectorAll('.board-card-cover');
+                covers.forEach(function(cover) {
+                    var card = cover.closest('.board-card');
+                    var onclick = card.getAttribute('onclick') || '';
+                    if (onclick.indexOf(key) >= 0) {
+                        if (dataUrl) {
+                            cover.style.backgroundImage = 'url(' + dataUrl + ')';
+                            cover.classList.add('has-image');
+                        } else {
+                            cover.style.backgroundImage = '';
+                            cover.classList.remove('has-image');
+                        }
+                    }
+                });
+            }
+
+            var covers = document.querySelectorAll('.board-card-cover');
+            covers.forEach(function(cover) {
+                var card = cover.closest('.board-card');
+                var onclick = card.getAttribute('onclick') || '';
+                var match = onclick.match(/data-discipline=(\w[-\w]*)/);
+                var key = match ? match[1] : null;
+                if (!key) return;
+
+                // 换图按钮 → 打开文件选择器
+                var editBtn = document.createElement('button');
+                editBtn.className = 'board-card-cover-edit';
+                editBtn.textContent = '🖼 换图';
+                editBtn.addEventListener('click', function(e) {
+                    e.stopPropagation(); e.preventDefault();
+                    pendingKey = key;
+                    fileInput.click();
+                });
+                cover.appendChild(editBtn);
+
+                // 重置按钮 → 恢复默认
+                var resetBtn = document.createElement('button');
+                resetBtn.className = 'board-card-cover-reset';
+                resetBtn.textContent = '↺ 重置';
+                resetBtn.addEventListener('click', function(e) {
+                    e.stopPropagation(); e.preventDefault();
+                    localStorage.removeItem('cover-' + key);
+                    applyCover(key, null);
+                });
+                cover.appendChild(resetBtn);
+
+                // 页面加载时恢复已保存图片
+                var saved = localStorage.getItem('cover-' + key);
+                if (saved) applyCover(key, saved);
+            });
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
