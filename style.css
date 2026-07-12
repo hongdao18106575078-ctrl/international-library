@@ -333,3 +333,45 @@ a:hover {
     .site-title { font-size: 1.5rem; }
     .logo-icon { font-size: 1.6rem; }
 }
+
+/* --- Book Subsections (for 诸子百家) --- */
+.book-subsection {
+    margin-top: 0.8rem;
+    padding-top: 0.5rem;
+}
+.book-subsection + .book-subsection {
+    border-top: 1px dashed var(--border-subtle);
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+.book-subsection-title {
+    display: block;
+    font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.3rem;
+}
+.book-subsection .resource-list li {
+    font-size: 0.85rem;
+    padding: 0.25rem 0;
+    padding-left: 0.5rem;
+    border-bottom: 1px dashed var(--border-subtle);
+}
+.book-subsection .resource-list li:last-child {
+    border-bottom: none;
+}
+.book-subsection .resource-list li a {
+    color: var(--ink-dark);
+}
+.book-subsection .resource-list li a:hover {
+    color: var(--accent);
+}
+.resource-list li a[download] {
+    color: var(--accent);
+    font-weight: 500;
+}
+.resource-list li a[download]:hover {
+    color: var(--accent-light);
+}
