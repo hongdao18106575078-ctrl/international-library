@@ -25,7 +25,7 @@
             font-size: 1rem;
             line-height: 2.2;
             color: var(--ink-dark);
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto;
             padding: 2rem 0;
         }
@@ -39,44 +39,68 @@
             padding-bottom: 0.8rem;
             border-bottom: 2px solid var(--border-light);
         }
-        .chapter-content p {
+        /* 原文：大号醒目 */
+        .chapter-content .ly-original {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1a1a1a;
             text-indent: 2em;
-            margin: 0.6em 0;
+            margin: 0.9em 0;
+            line-height: 2.4;
         }
-        .chapter-content .note-title,
-        .chapter-content .trans-title {
-            font-weight: 600;
-            color: var(--accent-gold);
-            text-indent: 0;
-            margin-top: 1.2em;
-            font-size: 0.9rem;
+        /* 题解说明文字 */
+        .chapter-content .ly-intro {
+            font-size: 0.92rem;
+            color: #777;
+            text-indent: 2em;
+            margin: 0.5em 0;
+            line-height: 2;
+            border-left: 3px solid #e8e0d5;
+            padding-left: 1em;
         }
-        .chapter-content .note {
+        /* 标注标题 */
+        .chapter-content .ly-label {
             font-size: 0.88rem;
-            color: var(--ink-gray);
+            font-weight: 600;
+            color: #b8860b;
             text-indent: 0;
-            margin-left: 1em;
+            margin-top: 1.5em;
+            margin-bottom: 0.2em;
+            letter-spacing: 0.05em;
         }
-        .chapter-content .trans {
-            color: var(--ink-gray);
+        /* 注释条目 */
+        .chapter-content .ly-note {
+            font-size: 0.88rem;
+            color: #888;
+            text-indent: 0;
+            margin: 0.3em 0 0.3em 1.5em;
+            line-height: 1.9;
+        }
+        /* 译文 */
+        .chapter-content .ly-trans {
+            font-size: 0.95rem;
+            color: #666;
+            text-indent: 2em;
+            margin: 0.5em 0;
+            line-height: 2.1;
+        }
+        .math-super {
+            vertical-align: super;
+            font-size: 0.7em;
+            color: #8b6914;
         }
         .back-link {
             display: inline-block;
-            margin-top: 2rem;
-            color: var(--accent);
+            margin-top: 2.5rem;
+            color: #8b6914;
             font-size: 0.9rem;
+            border-bottom: none;
         }
-        .back-link:hover {
-            color: var(--accent-light);
+        .back-link:hover { color: #a8842a; }
+        @media (max-width: 768px) {
+            .chapter-content .ly-original { font-size: 1.05rem; }
         }
-        /* 保留原EPUB样式中的关键样式 */
-        .math-super {
-            vertical-align: super;
-            font-size: 0.75em;
-        }
-        .kindle-cn-bold { font-weight: 600; }
-        .kindle-cn-para-1em-indent1a { text-indent: 0; margin-left: 1em; font-size: 0.88rem; color: var(--ink-gray); }
-    </style>
+</style>
 </head>
 <body>
     <header class="page-header">
@@ -96,8 +120,18 @@
     </header>
     <main class="main-content">
         <div class="container">
-            <div class="chapter-content">
-                
+            <div class="chapter-content" id="chapterContent"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-quote">"学而时习之，不亦说乎。"</p>
+                <p class="footer-motto">阅读资料库 · 自由阅读 · 自由思想</p>
+            </div>
+        </div>
+    </footer>
+    <div id="rawContent" style="display:none;">
 <div class="chapter" id="chapter">
 <h2 id="hh2-21" class="calibre45">尧曰篇第二十</h2>
 
@@ -209,18 +243,65 @@
 
     <p class="calibre6"><span>孔子说：“不懂得命，不能成为君子。不懂得礼，不能立身于社会。不懂得辨析别人的言语，不能了解人。”</span></p>
   </div>
-
-                <a href="../../zhuzi-lunyu.html" class="back-link">← 返回论语目录</a>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-quote">"学而时习之，不亦说乎。"</p>
-                <p class="footer-motto">阅读资料库 · 自由阅读 · 自由思想</p>
-            </div>
-        </div>
-    </footer>
+</div>
+    <script>
+    (function() {
+        const raw = document.getElementById('rawContent').innerHTML;
+        const container = document.getElementById('chapterContent');
+        if (!container) return;
+        
+        const temp = document.createElement('div');
+        temp.innerHTML = raw;
+        
+        const paragraphs = temp.querySelectorAll('p');
+        let isNote = false;
+        let isTrans = false;
+        
+        paragraphs.forEach(function(p) {
+            var html = p.innerHTML;
+            var text = p.textContent.trim();
+            
+            if (p.querySelector('h2')) return;
+            
+            if (html.indexOf('【题解】') !== -1 || html.indexOf('【注释】') !== -1 || html.indexOf('【译文】') !== -1) {
+                if (html.indexOf('【注释】') !== -1) { isNote = true; isTrans = false; }
+                else if (html.indexOf('【译文】') !== -1) { isNote = false; isTrans = true; }
+                else { isNote = false; isTrans = false; }
+                p.className = 'ly-label';
+                return;
+            }
+            
+            if (p.className.indexOf('kindle-cn-para-1em-indent1a') !== -1) {
+                p.className = 'ly-note';
+                return;
+            }
+            
+            if (isNote) {
+                p.className = 'ly-note';
+                return;
+            }
+            
+            if (isTrans) {
+                p.className = 'ly-trans';
+                return;
+            }
+            
+            if (text.length > 80 || text.indexOf('本篇') !== -1 || text.indexOf('《论语》') !== -1) {
+                p.className = 'ly-intro';
+                return;
+            }
+            
+            p.className = 'ly-original';
+        });
+        
+        container.innerHTML = temp.innerHTML;
+        
+        var back = document.createElement('a');
+        back.href = '../../zhuzi-lunyu.html';
+        back.className = 'back-link';
+        back.textContent = '← 返回论语目录';
+        container.appendChild(back);
+    })();
+    </script>
 </body>
 </html>
