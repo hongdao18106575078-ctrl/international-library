@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* --- 二级页面专用样式 --- */
         .page-header {
             background: linear-gradient(180deg, var(--paper-warm) 0%, var(--paper) 100%);
             padding: 2.5rem 0 1.5rem;
@@ -99,6 +98,15 @@
             gap: 1rem;
             margin-bottom: 2rem;
         }
+        .book-item-link {
+            text-decoration: none;
+            color: inherit;
+            border-bottom: none;
+            display: block;
+        }
+        .book-item-link:hover {
+            border-bottom: none;
+        }
         .book-item {
             background: var(--paper-card);
             border: 1px solid var(--border-subtle);
@@ -106,22 +114,13 @@
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            cursor: pointer;
+            height: 100%;
         }
         .book-item:hover {
             border-color: var(--accent);
             box-shadow: 0 4px 20px var(--shadow);
             background: var(--paper-warm);
             transform: translateY(-2px);
-        }
-        .book-item a {
-            text-decoration: none;
-            color: inherit;
-            border-bottom: none;
-        }
-        .book-item a:hover {
-            color: inherit;
-            border-bottom: none;
         }
         .book-name {
             font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
@@ -131,7 +130,6 @@
             letter-spacing: 0.04em;
             margin-bottom: 0.2rem;
         }
-
         .book-author {
             font-size: 0.8rem;
             color: var(--ink-light);
@@ -150,7 +148,6 @@
             margin-left: 0;
         }
 
-        /* 回到顶部 */
         .back-to-top {
             position: fixed;
             bottom: 2rem;
@@ -182,7 +179,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="page-header">
         <div class="container">
             <div class="breadcrumb">
@@ -196,7 +192,7 @@
             </div>
             <div class="page-title-wrap">
                 <h1>先秦诸子百家</h1>
-                <span class="sub-label">二十种 · 中华书局版</span>
+                <span class="sub-label">二十三种 · 中华书局版</span>
             </div>
             <div class="page-download">
                 <a href="books/zhuzi-baijia/诸子百家系列套装.epub" download>
@@ -209,223 +205,213 @@
 
     <main class="main-content">
         <div class="container">
-
-            <!-- 儒学 -->
             <section class="school-section">
                 <h2 class="school-title">儒学 <span class="count">· 六种</span></h2>
                 <div class="book-grid">
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 论语</div>
-            </a>
-                        <div class="book-author">孔子及弟子 · 约公元前5世纪</div>
-                        <div class="book-desc">儒家经典，孔子言行录，修身齐家治国平天下之本。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 孟子</div>
-            </a>
-                        <div class="book-author">孟子 · 约公元前4世纪</div>
-                        <div class="book-desc">仁义之说，性善之论，民贵君轻，浩然正气。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 荀子</div>
-            </a>
-                        <div class="book-author">荀子 · 约公元前3世纪</div>
-                        <div class="book-desc">性恶论，隆礼重法，儒法过渡之枢纽。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 大学</div>
-            </a>
-                        <div class="book-author">曾子 · 约公元前5世纪</div>
-                        <div class="book-desc">三纲领八条目，修齐治平之次第。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 中庸</div>
-            </a>
-                        <div class="book-author">子思 · 约公元前5世纪</div>
-                        <div class="book-desc">中和之道，天命之谓性，率性之谓道。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 孔子家语</div>
-            </a>
-                        <div class="book-author">孔子及弟子 · 三国魏王肃编</div>
-                        <div class="book-desc">孔子言行逸文，与论语互为补充。</div>
-                        <span class="tag">原典</span>
-                    </div>
+                    <a href="zhuzi-lunyu.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">论语</div>
+                            <div class="book-author">孔子及弟子 · 约公元前5世纪</div>
+                            <div class="book-desc">儒家经典，孔子言行录，修身齐家治国平天下之本。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-mengzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">孟子</div>
+                            <div class="book-author">孟子 · 约公元前4世纪</div>
+                            <div class="book-desc">仁义之说，性善之论，民贵君轻，浩然正气。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-xunzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">荀子</div>
+                            <div class="book-author">荀子 · 约公元前3世纪</div>
+                            <div class="book-desc">性恶论，隆礼重法，儒法过渡之枢纽。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-daxue.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">大学</div>
+                            <div class="book-author">曾子 · 约公元前5世纪</div>
+                            <div class="book-desc">三纲领八条目，修齐治平之次第。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-zhongyong.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">中庸</div>
+                            <div class="book-author">子思 · 约公元前5世纪</div>
+                            <div class="book-desc">中和之道，天命之谓性，率性之谓道。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-kongzi-jiayu.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">孔子家语</div>
+                            <div class="book-author">孔子及弟子 · 三国魏王肃编</div>
+                            <div class="book-desc">孔子言行逸文，与论语互为补充。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
                 </div>
             </section>
-
-            <!-- 道家 -->
             <section class="school-section">
                 <h2 class="school-title">道家 <span class="count">· 六种</span></h2>
                 <div class="book-grid">
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 老子</div>
-            </a>
-                        <div class="book-author">老子 · 约公元前6世纪</div>
-                        <div class="book-desc">道德五千言，道法自然，无为而治。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 庄子</div>
-            </a>
-                        <div class="book-author">庄子 · 约公元前4世纪</div>
-                        <div class="book-desc">逍遥游，齐物论，汪洋恣肆，天地精神。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 列子</div>
-            </a>
-                        <div class="book-author">列子 · 约公元前5世纪</div>
-                        <div class="book-desc">御风而行，寓言故事，贵虚尚玄。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 抱朴子内篇</div>
-            </a>
-                        <div class="book-author">葛洪 · 公元4世纪</div>
-                        <div class="book-desc">神仙道教之集大成，论道炼丹，养生延年。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 淮南子</div>
-            </a>
-                        <div class="book-author">刘安 · 公元前2世纪</div>
-                        <div class="book-desc">杂采百家，贯穿道儒法，汉代思想之渊博。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 关尹子</div>
-            </a>
-                        <div class="book-author">关尹子 · 约公元前5世纪</div>
-                        <div class="book-desc">道家关尹学派，以道为本，贵清主静。</div>
-                        <span class="tag">原典</span>
-                    </div>
+                    <a href="zhuzi-laozi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">老子</div>
+                            <div class="book-author">老子 · 约公元前6世纪</div>
+                            <div class="book-desc">道德五千言，道法自然，无为而治。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-zhuangzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">庄子</div>
+                            <div class="book-author">庄子 · 约公元前4世纪</div>
+                            <div class="book-desc">逍遥游，齐物论，汪洋恣肆，天地精神。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-liezi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">列子</div>
+                            <div class="book-author">列子 · 约公元前5世纪</div>
+                            <div class="book-desc">御风而行，寓言故事，贵虚尚玄。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-baopuzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">抱朴子内篇</div>
+                            <div class="book-author">葛洪 · 公元4世纪</div>
+                            <div class="book-desc">神仙道教之集大成，论道炼丹，养生延年。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-huainanzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">淮南子</div>
+                            <div class="book-author">刘安 · 公元前2世纪</div>
+                            <div class="book-desc">杂采百家，贯穿道儒法，汉代思想之渊博。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-guan-yinzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">关尹子</div>
+                            <div class="book-author">关尹子 · 约公元前5世纪</div>
+                            <div class="book-desc">道家关尹学派，以道为本，贵清主静。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
                 </div>
             </section>
-
-            <!-- 墨家·名家·法家 -->
             <section class="school-section">
                 <h2 class="school-title">墨家 · 名家 · 法家 <span class="count">· 四种</span></h2>
                 <div class="book-grid">
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 墨子</div>
-            </a>
-                        <div class="book-author">墨子 · 约公元前5世纪</div>
-                        <div class="book-desc">兼爱非攻，尚贤节用，先秦逻辑学之先声。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 公孙龙子</div>
-            </a>
-                        <div class="book-author">公孙龙 · 约公元前3世纪</div>
-                        <div class="book-desc">白马非马，坚白同异，先秦名家之代表。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 韩非子</div>
-            </a>
-                        <div class="book-author">韩非 · 约公元前3世纪</div>
-                        <div class="book-desc">法势术集大成，帝王之术，冷峻深刻。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 管子</div>
-            </a>
-                        <div class="book-author">管仲及齐法家 · 约公元前7—前3世纪</div>
-                        <div class="book-desc">富国强兵，礼法并用，先秦经济政治思想之瑰宝。</div>
-                        <span class="tag">原典</span>
-                    </div>
+                    <a href="zhuzi-mozi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">墨子</div>
+                            <div class="book-author">墨子 · 约公元前5世纪</div>
+                            <div class="book-desc">兼爱非攻，尚贤节用，先秦逻辑学之先声。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-gongsun-longzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">公孙龙子</div>
+                            <div class="book-author">公孙龙 · 约公元前3世纪</div>
+                            <div class="book-desc">白马非马，坚白同异，先秦名家之代表。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-hanfeizi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">韩非子</div>
+                            <div class="book-author">韩非 · 约公元前3世纪</div>
+                            <div class="book-desc">法势术集大成，帝王之术，冷峻深刻。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-guanzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">管子</div>
+                            <div class="book-author">管仲及齐法家 · 约公元前7—前3世纪</div>
+                            <div class="book-desc">富国强兵，礼法并用，先秦经济政治思想之瑰宝。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
                 </div>
             </section>
-
-            <!-- 兵家·纵横家·杂家 -->
             <section class="school-section">
                 <h2 class="school-title">兵家 · 纵横家 · 杂家 <span class="count">· 七种</span></h2>
                 <div class="book-grid">
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 孙子兵法</div>
-            </a>
-                        <div class="book-author">孙武 · 约公元前6世纪</div>
-                        <div class="book-desc">兵家圣典，知己知彼，百战不殆。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 吴子</div>
-            </a>
-                        <div class="book-author">吴起 · 约公元前4世纪</div>
-                        <div class="book-desc">与孙子并称孙吴，论将治兵，内修外攘。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 司马法</div>
-            </a>
-                        <div class="book-author">司马穰苴 · 约公元前5世纪</div>
-                        <div class="book-desc">古司马兵法，仁本为先，以战止战。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 六韬</div>
-            </a>
-                        <div class="book-author">姜尚（托名）· 约公元前4世纪</div>
-                        <div class="book-desc">文韬武略，龙虎豹犬，兵家之大成。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 鬼谷子</div>
-            </a>
-                        <div class="book-author">鬼谷子 · 约公元前4世纪</div>
-                        <div class="book-desc">捭阖纵横，揣摩权谋，纵横家之祖。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 黄帝四经</div>
-            </a>
-                        <div class="book-author">佚名 · 约公元前3世纪</div>
-                        <div class="book-desc">黄老道家之根本，道法结合，刑名之学。</div>
-                        <span class="tag">原典</span>
-                    </div>
-                    <div class="book-item">
-            <a href="zhuzi-lunyu.html" style="display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit;">
-                        <div class="book-name"><a 尸子</div>
-            </a>
-                        <div class="book-author">尸佼 · 约公元前4世纪</div>
-                        <div class="book-desc">杂家著述，兼儒墨合名法，博采众说。</div>
-                        <span class="tag">原典</span>
-                    </div>
+                    <a href="zhuzi-sunzi-bingfa.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">孙子兵法</div>
+                            <div class="book-author">孙武 · 约公元前6世纪</div>
+                            <div class="book-desc">兵家圣典，知己知彼，百战不殆。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-wuzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">吴子</div>
+                            <div class="book-author">吴起 · 约公元前4世纪</div>
+                            <div class="book-desc">与孙子并称孙吴，论将治兵，内修外攘。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-sima-fa.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">司马法</div>
+                            <div class="book-author">司马穰苴 · 约公元前5世纪</div>
+                            <div class="book-desc">古司马兵法，仁本为先，以战止战。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-liutao.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">六韬</div>
+                            <div class="book-author">姜尚（托名）· 约公元前4世纪</div>
+                            <div class="book-desc">文韬武略，龙虎豹犬，兵家之大成。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-guiguzi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">鬼谷子</div>
+                            <div class="book-author">鬼谷子 · 约公元前4世纪</div>
+                            <div class="book-desc">捭阖纵横，揣摩权谋，纵横家之祖。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-huangdi-sijing.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">黄帝四经</div>
+                            <div class="book-author">佚名 · 约公元前3世纪</div>
+                            <div class="book-desc">黄老道家之根本，道法结合，刑名之学。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
+                    <a href="zhuzi-shizi.html" class="book-item-link">
+                        <div class="book-item">
+                            <div class="book-name">尸子</div>
+                            <div class="book-author">尸佼 · 约公元前4世纪</div>
+                            <div class="book-desc">杂家著述，兼儒墨合名法，博采众说。</div>
+                            <span class="tag">原典</span>
+                        </div>
+                    </a>
                 </div>
             </section>
-
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
