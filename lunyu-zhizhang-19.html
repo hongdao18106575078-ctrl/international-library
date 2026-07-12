@@ -12,94 +12,49 @@
             padding: 2rem 0 1rem;
             border-bottom: 1px solid var(--border-light);
         }
-        .breadcrumb {
-            font-size: 0.85rem;
-            color: var(--ink-light);
-            margin-bottom: 0.8rem;
-        }
+        .breadcrumb { font-size: 0.85rem; color: var(--ink-light); margin-bottom: 0.8rem; }
         .breadcrumb a { color: var(--ink-light); border-bottom: none; }
         .breadcrumb a:hover { color: var(--accent); }
         .breadcrumb span { margin: 0 0.4rem; }
         .chapter-content {
             font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
-            font-size: 1rem;
-            line-height: 2.2;
-            color: var(--ink-dark);
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 2rem 0;
+            max-width: 760px; margin: 0 auto; padding: 2rem 0;
         }
-        .chapter-content h2 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--ink-black);
-            text-align: center;
-            letter-spacing: 0.08em;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.8rem;
+        .chapter-title {
+            font-size: 1.6rem; font-weight: 700; color: var(--ink-black);
+            text-align: center; letter-spacing: 0.08em;
+            margin-bottom: 1.5rem; padding-bottom: 0.8rem;
             border-bottom: 2px solid var(--border-light);
         }
-        /* 原文：大号醒目 */
-        .chapter-content .ly-original {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #1a1a1a;
-            text-indent: 2em;
-            margin: 0.9em 0;
-            line-height: 2.4;
+        .original-text {
+            font-size: 1.2rem; font-weight: 500; color: #1a1a1a;
+            text-indent: 2em; margin: 0.8em 0; line-height: 2.4;
         }
-        /* 题解说明文字 */
-        .chapter-content .ly-intro {
-            font-size: 0.92rem;
-            color: #777;
-            text-indent: 2em;
-            margin: 0.5em 0;
-            line-height: 2;
-            border-left: 3px solid #e8e0d5;
-            padding-left: 1em;
+        .intro-text {
+            font-size: 0.92rem; color: #888;
+            text-indent: 2em; margin: 0.5em 0; line-height: 2;
+            border-left: 3px solid #e8e0d5; padding-left: 1em;
         }
-        /* 标注标题 */
-        .chapter-content .ly-label {
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: #b8860b;
-            text-indent: 0;
-            margin-top: 1.5em;
-            margin-bottom: 0.2em;
-            letter-spacing: 0.05em;
+        .section-label {
+            font-size: 0.9rem; font-weight: 600; color: #b8860b;
+            margin-top: 1.5em; margin-bottom: 0.3em;
         }
-        /* 注释条目 */
-        .chapter-content .ly-note {
-            font-size: 0.88rem;
-            color: #888;
-            text-indent: 0;
-            margin: 0.3em 0 0.3em 1.5em;
-            line-height: 1.9;
+        .note-item {
+            font-size: 0.88rem; color: #888;
+            margin: 0.3em 0 0.3em 1.5em; line-height: 1.9;
         }
-        /* 译文 */
-        .chapter-content .ly-trans {
-            font-size: 0.95rem;
-            color: #666;
-            text-indent: 2em;
-            margin: 0.5em 0;
-            line-height: 2.1;
+        .trans-text {
+            font-size: 0.95rem; color: #666;
+            text-indent: 2em; margin: 0.5em 0; line-height: 2.1;
         }
-        .math-super {
-            vertical-align: super;
-            font-size: 0.7em;
-            color: #8b6914;
+        .super-num {
+            vertical-align: super; font-size: 0.7em; color: #8b6914;
         }
         .back-link {
-            display: inline-block;
-            margin-top: 2.5rem;
-            color: #8b6914;
-            font-size: 0.9rem;
-            border-bottom: none;
+            display: inline-block; margin-top: 2.5rem;
+            color: #8b6914; font-size: 0.9rem;
         }
         .back-link:hover { color: #a8842a; }
-        @media (max-width: 768px) {
-            .chapter-content .ly-original { font-size: 1.05rem; }
-        }
 </style>
 </head>
 <body>
@@ -120,7 +75,134 @@
     </header>
     <main class="main-content">
         <div class="container">
-            <div class="chapter-content" id="chapterContent"></div>
+            <div class="chapter-content">
+                <div class="chapter-title">子张篇第十九</div>
+            <div class="section-label">【题解】</div>
+            <div class="intro-text">本篇共二十五章，全部是孔子学生的言论。这些言谈当发生在孔子去世以后，故先于孔子去世的一些学生，如颜回、子路等均未出现。本篇结构即以孔子五个学生的先后排列而成。在孔子身后，这五个学生都有比较大的影响。《韩非子·显学》称孔子以后儒分为八，子张之儒列于第一。子夏授学于西河，门下多有知名儒者。子游、曾参均设坛讲学，孟子理论受到他们的影响甚多。子贡则以政事见长，建有不少实际功绩。本篇所论既有君子士人的学习、品行、立身行事等内容，也有同门间对某些问题的讨论交流，同时也可看到学生们对孔子的久远怀思。</div>
+            <div class="original-text">子张曰：“士见危致命，见得思义，祭思敬，丧思哀，其可已矣。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子张说：“士人遇见危险能献出生命，见有所得能考虑是否合乎义，祭祀时想到恭敬，居丧时想到哀伤，那也就可以了。”</div>
+            <div class="trans-text">子张曰：“执德不弘，信道不笃，焉能为有？焉能为亡[1]？”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>“焉能为有”两句：意谓这样的人有不足为重，无不足为轻。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子张说：“持守道德却不能光大，信仰大道却不忠诚，这种人怎能算他有？又怎能算他没有？”</div>
+            <div class="trans-text">子夏之门人问交于子张。子张曰：“子夏云何？”</div>
+            <div class="trans-text">对曰：“子夏曰：‘可者与之，其不可者拒之。’”</div>
+            <div class="trans-text">子张曰：“异乎吾所闻。君子尊贤而容众，嘉善而矜不能[1]。我之大贤与，于人何所不容？我之不贤与，人将拒我，如之何其拒人也？”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>矜：同情，怜悯。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏的学生问子张怎样交友。子张问：“子夏怎么说呢？”</div>
+            <div class="trans-text">学生答道：“子夏说：‘可以为友的就与他相交，不可为友的就拒绝与他相交。’”</div>
+            <div class="trans-text">子张说：“我所听到的与此不同。君子尊重贤人而容纳众人，称赞善人而怜悯无能的人。我若是个大贤呢，对什么人不能容纳？我若是个不贤之人，那别人就会拒绝我，我怎么可能去拒绝别人呢？”</div>
+            <div class="trans-text">子夏曰：“虽小道，必有可观者焉，致远恐泥[1]，是以君子不为也。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>泥：滞陷不通。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“即使是小技艺，也必有可取的地方，但恐怕妨碍远大事业的实现，所以君子不从事小技艺。”</div>
+            <div class="trans-text">子夏曰：“日知其所亡，月无忘其所能，可谓好学也已矣。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“每天能知道自己原来所不知道的，每月能不忘记自己已经学到的，这可说是好学的了。”</div>
+            <div class="trans-text">子夏曰：“博学而笃志，切问而近思，仁在其中矣。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“广博地学习，并能坚守志趣；问与自己所学切近的问题，并思考近前的事，仁就在其中了。”</div>
+            <div class="trans-text">子夏曰：“百工居肆以成其事[1]，君子学以致其道。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>肆：手工业作坊。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“各种工匠居于作坊来完成他们的工作，君子通过学习来获得道。”</div>
+            <div class="trans-text">子夏曰：“小人之过也必文。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“小人有了过错必作掩饰。”</div>
+            <div class="trans-text">子夏曰：“君子有三变：望之俨然，即之也温，听其言也厉。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“君子有三个变化的形象：远远望去庄重威严，与他接近温和可亲，听他说话义正词严。”</div>
+            <div class="trans-text">子夏曰：“君子信而后劳其民；未信，则以为厉己也[1]。信而后谏；未信，则以为谤己也。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>厉：虐害，欺压。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“君子在取得信任后才使唤百姓；未取得信任就这样做，百姓会以为是虐害他们。君子在取得信任后才进谏君主；未取得信任就这样做，君主会以为是诽谤他。”</div>
+            <div class="trans-text">子夏曰：“大德不逾闲[1]，小德出入可也。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>闲：栅栏等阻隔物，这里指界限。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“大的德行不可逾越界限，小的德行有些出入是可以的。”</div>
+            <div class="trans-text">子游曰：“子夏之门人小子，当洒扫应对进退，则可矣，抑末也。本之则无，如之何？”</div>
+            <div class="trans-text">子夏闻之，曰：“噫！言游过矣！君子之道，孰先传焉？孰后倦焉[1]？譬诸草木，区以别矣。君子之道，焉可诬也？有始有卒者，其惟圣人乎！”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>“孰先传焉”两句：意谓传授君子之道，哪里是刻板地确定什么在先什么在后，而放在后面传授的也不表示倦于教诲，其实只是根据弟子的学业情况区别对待而已。倦，这里用“诲人不倦”的语义，即倦教的意思。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子游说：“子夏的这些学生啊，让他们担当洒水扫地及以言辞仪容应对宾客，那是可以的，但这只是细枝末节罢了。至于根本的道理却没有学到，这怎么行呢？”</div>
+            <div class="trans-text">子夏听到了这番话，说：“咳！言游的话错了！君子之道，哪里是什么内容一定先传授？什么内容放在后面就倦于教诲？其实就像草木，是要对不同种类加以区别的。君子之道，怎么可以欺诬？而能对道按本末顺序、有始有终贯通的，大概只有圣人了！”</div>
+            <div class="trans-text">子夏曰：“仕而优则学，学而优则仕。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子夏说：“做官而有余力便去学习，学习而有余力便去做官。”</div>
+            <div class="trans-text">子游曰：“丧致乎哀而止。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子游说：“居丧能充分表达哀情就可以了。”</div>
+            <div class="trans-text">子游曰：“吾友张也为难能也，然而未仁。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子游说：“我的朋友子张可说是难能可贵的了，但还没有达到仁。”</div>
+            <div class="trans-text">曾子曰：“堂堂乎张也[1]，难于并为仁矣。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>堂堂：形容容貌仪表壮伟。或说形容为人高不可及，不平易亲近。今从前说。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">曾子说：“子张仪容堂堂，难于和他共行仁道啊。”</div>
+            <div class="trans-text">曾子曰：“吾闻诸夫子：人未有自致者也[1]，必也亲丧乎！”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>致：竭尽，这里指真情不能自已而尽其极。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">曾子说：“我听老师说过：人没有自己竭尽其情的，如有，一定是遇到父母去世的时候吧！”</div>
+            <div class="trans-text">曾子曰：“吾闻诸夫子：孟庄子之孝也[1]，其他可能也，其不改父之臣与父之政，是难能也。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>孟庄子：鲁国大夫，姓仲孙，名速。其父仲孙蔑，即孟献子，也是鲁国大夫，有贤德。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">曾子说：“我听老师说过：孟庄子的行孝，别的方面还可做到，而他不换父亲所用的人，不变父亲所实行的政事，这是很难做到的。”</div>
+            <div class="trans-text">孟氏使阳肤为士师[1]，问于曾子。曾子曰：“上失其道，民散久矣。如得其情，则哀矜而勿喜！”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>阳肤：曾子学生。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">孟氏命阳肤任典狱官，阳肤向曾子请教。曾子说：“在上位的人不按道行事，民心离散已久。如果你审知犯罪实情，应该哀悯他们，而不要高兴自己的明察！”</div>
+            <div class="trans-text">子贡曰：“纣之不善[1]，不如是之甚也。是以君子恶居下流[2]，天下之恶皆归焉。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>纣：商朝末代君王。</span></div>
+            <div class="note-item">[2]<span>下流：地势低下的处所，比喻恶名归集的地位。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子贡说：“纣王的不善，也不像如今传说的那样厉害。所以君子不肯居于下流之地，以致天下的恶名都归集到他身上。”</div>
+            <div class="trans-text">子贡曰：“君子之过也，如日月之食焉。过也，人皆见之；更也，人皆仰之。”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">子贡说：“君子的过失犹如日食月食。有过失的时候，人人都能看见；改正的时候，人人都仰望着。”</div>
+            <div class="trans-text">卫公孙朝问于子贡曰[1]：“仲尼焉学？”子贡曰：“文武之道，未坠于地，在人。贤者识其大者，不贤者识其小者。莫不有文武之道焉。夫子焉不学？而亦何常师之有？”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>公孙朝：卫国大夫。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">卫国的公孙朝问子贡说：“仲尼的学问是从哪里学得的？”子贡说：“文王武王之道并没有流失，就存在人世。贤者认识到它的大处，不贤者只知道它的枝节。没有一处不存有文王武王之道。我的老师何处不能学习？又哪里有固定的传授之师呀？”</div>
+            <div class="trans-text">叔孙武叔语大夫于朝曰[1]：“子贡贤于仲尼。”</div>
+            <div class="trans-text">子服景伯以告子贡。</div>
+            <div class="trans-text">子贡曰：“譬之宫墙[2]，赐之墙也及肩，窥见室家之好。夫子之墙数仞[3]，不得其门而入，不见宗庙之美，百官之富[4]。得其门者或寡矣。夫子之云[5]，不亦宜乎！”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>叔孙武叔：鲁国大夫，名州仇，谥号武。</span></div>
+            <div class="note-item">[2]<span>宫墙：围墙。</span></div>
+            <div class="note-item">[3]<span>仞：古代长度单位，一仞为七尺，或说八尺。</span></div>
+            <div class="note-item">[4]<span>官：房舍。</span></div>
+            <div class="note-item">[5]<span>夫子：指叔孙武叔。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">叔孙武叔在朝中对诸大夫说：“子贡比仲尼更优秀。”</div>
+            <div class="trans-text">子服景伯把这话告诉子贡。</div>
+            <div class="trans-text">子贡说：“就用围墙作比方吧，我家的围墙只有肩膀那么高，人们可以直接望见墙内房屋的美好。我老师的围墙高达数丈，不找到大门进入，就不能看到宗庙的华美和房舍的富丽。而能找到大门的人或许不多吧。那位先生这样说，不也是自然的吗？”</div>
+            <div class="trans-text">叔孙武叔毁仲尼。子贡曰：“无以为也！仲尼不可毁也。他人之贤者，丘陵也，犹可逾也。仲尼，日月也，无得而逾焉。人虽欲自绝，其何伤于日月乎？多见其不知量也[1]。”</div>
+            <div class="section-label">【注释】</div>
+            <div class="note-item">[1]<span>多：通“祇”，不过。</span></div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">叔孙武叔毁谤仲尼。子贡说：“不要这样做！仲尼是毁谤不了的。其他贤者好比是丘陵，还可以逾越。仲尼好比是日月，不可能逾越。即使有人自己要与日月决绝，那对日月又有什么损害呢？这只是显出他的不自量罢了。”</div>
+            <div class="trans-text">陈子禽谓子贡曰：“子为恭也，仲尼岂贤于子乎？”</div>
+            <div class="trans-text">子贡曰：“君子一言以为知，一言以为不知，言不可不慎也。夫子之不可及也，犹天之不可阶而升也。夫子之得邦家者，所谓立之斯立，道之斯行，绥之斯来，动之斯和。其生也荣，其死也哀，如之何其可及也？”</div>
+            <div class="section-label">【译文】</div>
+            <div class="trans-text">陈子禽对子贡说：“你不过是恭谦吧，难道仲尼真比你优秀吗？”</div>
+            <div class="trans-text">子贡说：“君子可由一句话显出他的聪明，也可由一句话显出他的无知，所以出言不可不谨慎啊。我的老师是不可企及的，犹如天不可用阶梯攀升一样。如果我的老师得国为诸侯，或得封邑为卿大夫，那真如我们所说的，教百姓立身于世，百姓就会立身于世；引导百姓，百姓就前行；安抚百姓，百姓就来归附；鼓动百姓，百姓就齐心协力。他生而享有尊荣，死而令人哀痛，他怎么能够企及呢？”</div>
+                <a href="zhuzi-lunyu.html" class="back-link">← 返回论语目录</a>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -131,319 +213,5 @@
             </div>
         </div>
     </footer>
-    <div id="rawContent" style="display:none;">
-<div class="chapter" id="chapter">
-<h2 id="hh2-20" class="calibre45">子张篇第十九</h2>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【题解】</span></span></p>
-
-    <p class="calibre6"><span>本篇共二十五章，全部是孔子学生的言论。这些言谈当发生在孔子去世以后，故先于孔子去世的一些学生，如颜回、子路等均未出现。本篇结构即以孔子五个学生的先后排列而成。在孔子身后，这五个学生都有比较大的影响。《韩非子·显学》称孔子以后儒分为八，子张之儒列于第一。子夏授学于西河，门下多有知名儒者。子游、曾参均设坛讲学，孟子理论受到他们的影响甚多。子贡则以政事见长，建有不少实际功绩。本篇所论既有君子士人的学习、品行、立身行事等内容，也有同门间对某些问题的讨论交流，同时也可看到学生们对孔子的久远怀思。</span></p>
-
-    <p class="calibre7">子张曰：“士见危致命，见得思义，祭思敬，丧思哀，其可已矣。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子张说：“士人遇见危险能献出生命，见有所得能考虑是否合乎义，祭祀时想到恭敬，居丧时想到哀伤，那也就可以了。”</span></p>
-
-    <p class="calibre7">子张曰：“执德不弘，信道不笃，焉能为有？焉能为亡<span class="math-super">[1]</span>？”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>“焉能为有”两句：意谓这样的人有不足为重，无不足为轻。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子张说：“持守道德却不能光大，信仰大道却不忠诚，这种人怎能算他有？又怎能算他没有？”</span></p>
-
-    <p class="calibre7">子夏之门人问交于子张。子张曰：“子夏云何？”</p>
-
-    <p class="calibre6">对曰：“子夏曰：‘可者与之，其不可者拒之。’”</p>
-
-    <p class="calibre6">子张曰：“异乎吾所闻。君子尊贤而容众，嘉善而矜不能<span class="math-super">[1]</span>。我之大贤与，于人何所不容？我之不贤与，人将拒我，如之何其拒人也？”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>矜：同情，怜悯。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏的学生问子张怎样交友。子张问：“子夏怎么说呢？”</span></p>
-
-    <p class="calibre6"><span>学生答道：“子夏说：‘可以为友的就与他相交，不可为友的就拒绝与他相交。’”</span></p>
-
-    <p class="calibre6"><span>子张说：“我所听到的与此不同。君子尊重贤人而容纳众人，称赞善人而怜悯无能的人。我若是个大贤呢，对什么人不能容纳？我若是个不贤之人，那别人就会拒绝我，我怎么可能去拒绝别人呢？”</span></p>
-
-    <p class="calibre7">子夏曰：“虽小道，必有可观者焉，致远恐泥<span class="math-super">[1]</span>，是以君子不为也。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>泥：滞陷不通。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“即使是小技艺，也必有可取的地方，但恐怕妨碍远大事业的实现，所以君子不从事小技艺。”</span></p>
-
-    <p class="calibre7">子夏曰：“日知其所亡，月无忘其所能，可谓好学也已矣。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“每天能知道自己原来所不知道的，每月能不忘记自己已经学到的，这可说是好学的了。”</span></p>
-
-    <p class="calibre7">子夏曰：“博学而笃志，切问而近思，仁在其中矣。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“广博地学习，并能坚守志趣；问与自己所学切近的问题，并思考近前的事，仁就在其中了。”</span></p>
-
-    <p class="calibre7">子夏曰：“百工居肆以成其事<span class="math-super">[1]</span>，君子学以致其道。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>肆：手工业作坊。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“各种工匠居于作坊来完成他们的工作，君子通过学习来获得道。”</span></p>
-
-    <p class="calibre7">子夏曰：“小人之过也必文。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“小人有了过错必作掩饰。”</span></p>
-
-    <p class="calibre7">子夏曰：“君子有三变：望之俨然，即之也温，听其言也厉。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“君子有三个变化的形象：远远望去庄重威严，与他接近温和可亲，听他说话义正词严。”</span></p>
-
-    <p class="calibre7">子夏曰：“君子信而后劳其民；未信，则以为厉己也<span class="math-super">[1]</span>。信而后谏；未信，则以为谤己也。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>厉：虐害，欺压。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“君子在取得信任后才使唤百姓；未取得信任就这样做，百姓会以为是虐害他们。君子在取得信任后才进谏君主；未取得信任就这样做，君主会以为是诽谤他。”</span></p>
-
-    <p class="calibre7">子夏曰：“大德不逾闲<span class="math-super">[1]</span>，小德出入可也。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>闲：栅栏等阻隔物，这里指界限。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“大的德行不可逾越界限，小的德行有些出入是可以的。”</span></p>
-
-    <p class="calibre7">子游曰：“子夏之门人小子，当洒扫应对进退，则可矣，抑末也。本之则无，如之何？”</p>
-
-    <p class="calibre6">子夏闻之，曰：“噫！言游过矣！君子之道，孰先传焉？孰后倦焉<span class="math-super">[1]</span>？譬诸草木，区以别矣。君子之道，焉可诬也？有始有卒者，其惟圣人乎！”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>“孰先传焉”两句：意谓传授君子之道，哪里是刻板地确定什么在先什么在后，而放在后面传授的也不表示倦于教诲，其实只是根据弟子的学业情况区别对待而已。倦，这里用“诲人不倦”的语义，即倦教的意思。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子游说：“子夏的这些学生啊，让他们担当洒水扫地及以言辞仪容应对宾客，那是可以的，但这只是细枝末节罢了。至于根本的道理却没有学到，这怎么行呢？”</span></p>
-
-    <p class="calibre6"><span>子夏听到了这番话，说：“咳！言游的话错了！君子之道，哪里是什么内容一定先传授？什么内容放在后面就倦于教诲？其实就像草木，是要对不同种类加以区别的。君子之道，怎么可以欺诬？而能对道按本末顺序、有始有终贯通的，大概只有圣人了！”</span></p>
-
-    <p class="calibre7">子夏曰：“仕而优则学，学而优则仕。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子夏说：“做官而有余力便去学习，学习而有余力便去做官。”</span></p>
-
-    <p class="calibre7">子游曰：“丧致乎哀而止。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子游说：“居丧能充分表达哀情就可以了。”</span></p>
-
-    <p class="calibre7">子游曰：“吾友张也为难能也，然而未仁。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子游说：“我的朋友子张可说是难能可贵的了，但还没有达到仁。”</span></p>
-
-    <p class="calibre7">曾子曰：“堂堂乎张也<span class="math-super">[1]</span>，难于并为仁矣。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>堂堂：形容容貌仪表壮伟。或说形容为人高不可及，不平易亲近。今从前说。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>曾子说：“子张仪容堂堂，难于和他共行仁道啊。”</span></p>
-
-    <p class="calibre7">曾子曰：“吾闻诸夫子：人未有自致者也<span class="math-super">[1]</span>，必也亲丧乎！”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>致：竭尽，这里指真情不能自已而尽其极。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>曾子说：“我听老师说过：人没有自己竭尽其情的，如有，一定是遇到父母去世的时候吧！”</span></p>
-
-    <p class="calibre7">曾子曰：“吾闻诸夫子：孟庄子之孝也<span class="math-super">[1]</span>，其他可能也，其不改父之臣与父之政，是难能也。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>孟庄子：鲁国大夫，姓仲孙，名速。其父仲孙蔑，即孟献子，也是鲁国大夫，有贤德。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>曾子说：“我听老师说过：孟庄子的行孝，别的方面还可做到，而他不换父亲所用的人，不变父亲所实行的政事，这是很难做到的。”</span></p>
-
-    <p class="calibre7">孟氏使阳肤为士师<span class="math-super">[1]</span>，问于曾子。曾子曰：“上失其道，民散久矣。如得其情，则哀矜而勿喜！”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>阳肤：曾子学生。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>孟氏命阳肤任典狱官，阳肤向曾子请教。曾子说：“在上位的人不按道行事，民心离散已久。如果你审知犯罪实情，应该哀悯他们，而不要高兴自己的明察！”</span></p>
-
-    <p class="calibre7">子贡曰：“纣之不善<span class="math-super">[1]</span>，不如是之甚也。是以君子恶居下流<span class="math-super">[2]</span>，天下之恶皆归焉。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>纣：商朝末代君王。</span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[2]<span>下流：地势低下的处所，比喻恶名归集的地位。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子贡说：“纣王的不善，也不像如今传说的那样厉害。所以君子不肯居于下流之地，以致天下的恶名都归集到他身上。”</span></p>
-
-    <p class="calibre7">子贡曰：“君子之过也，如日月之食焉。过也，人皆见之；更也，人皆仰之。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>子贡说：“君子的过失犹如日食月食。有过失的时候，人人都能看见；改正的时候，人人都仰望着。”</span></p>
-
-    <p class="calibre7">卫公孙朝问于子贡曰<span class="math-super">[1]</span>：“仲尼焉学？”子贡曰：“文武之道，未坠于地，在人。贤者识其大者，不贤者识其小者。莫不有文武之道焉。夫子焉不学？而亦何常师之有？”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>公孙朝：卫国大夫。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>卫国的公孙朝问子贡说：“仲尼的学问是从哪里学得的？”子贡说：“文王武王之道并没有流失，就存在人世。贤者认识到它的大处，不贤者只知道它的枝节。没有一处不存有文王武王之道。我的老师何处不能学习？又哪里有固定的传授之师呀？”</span></p>
-
-    <p class="calibre7">叔孙武叔语大夫于朝曰<span class="math-super">[1]</span>：“子贡贤于仲尼。”</p>
-
-    <p class="calibre6">子服景伯以告子贡。</p>
-
-    <p class="calibre6">子贡曰：“譬之宫墙<span class="math-super">[2]</span>，赐之墙也及肩，窥见室家之好。夫子之墙数仞<span class="math-super">[3]</span>，不得其门而入，不见宗庙之美，百官之富<span class="math-super">[4]</span>。得其门者或寡矣。夫子之云<span class="math-super">[5]</span>，不亦宜乎！”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>叔孙武叔：鲁国大夫，名州仇，谥号武。</span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[2]<span>宫墙：围墙。</span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[3]<span>仞：古代长度单位，一仞为七尺，或说八尺。</span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[4]<span>官：房舍。</span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[5]<span>夫子：指叔孙武叔。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>叔孙武叔在朝中对诸大夫说：“子贡比仲尼更优秀。”</span></p>
-
-    <p class="calibre6"><span>子服景伯把这话告诉子贡。</span></p>
-
-    <p class="calibre6"><span>子贡说：“就用围墙作比方吧，我家的围墙只有肩膀那么高，人们可以直接望见墙内房屋的美好。我老师的围墙高达数丈，不找到大门进入，就不能看到宗庙的华美和房舍的富丽。而能找到大门的人或许不多吧。那位先生这样说，不也是自然的吗？”</span></p>
-
-    <p class="calibre7">叔孙武叔毁仲尼。子贡曰：“无以为也！仲尼不可毁也。他人之贤者，丘陵也，犹可逾也。仲尼，日月也，无得而逾焉。人虽欲自绝，其何伤于日月乎？多见其不知量也<span class="math-super">[1]</span>。”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【注释】</span></span></p>
-
-    <p class="kindle-cn-para-1em-indent1a">[1]<span>多：通“祇”，不过。</span></p>
-
-    <p class="calibre6"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>叔孙武叔毁谤仲尼。子贡说：“不要这样做！仲尼是毁谤不了的。其他贤者好比是丘陵，还可以逾越。仲尼好比是日月，不可能逾越。即使有人自己要与日月决绝，那对日月又有什么损害呢？这只是显出他的不自量罢了。”</span></p>
-
-    <p class="calibre7">陈子禽谓子贡曰：“子为恭也，仲尼岂贤于子乎？”</p>
-
-    <p class="calibre6">子贡曰：“君子一言以为知，一言以为不知，言不可不慎也。夫子之不可及也，犹天之不可阶而升也。夫子之得邦家者，所谓立之斯立，道之斯行，绥之斯来，动之斯和。其生也荣，其死也哀，如之何其可及也？”</p>
-
-    <p class="calibre7"><span class="kindle-cn-bold"><span class="font1">【译文】</span></span></p>
-
-    <p class="calibre6"><span>陈子禽对子贡说：“你不过是恭谦吧，难道仲尼真比你优秀吗？”</span></p>
-
-    <p class="calibre6"><span>子贡说：“君子可由一句话显出他的聪明，也可由一句话显出他的无知，所以出言不可不谨慎啊。我的老师是不可企及的，犹如天不可用阶梯攀升一样。如果我的老师得国为诸侯，或得封邑为卿大夫，那真如我们所说的，教百姓立身于世，百姓就会立身于世；引导百姓，百姓就前行；安抚百姓，百姓就来归附；鼓动百姓，百姓就齐心协力。他生而享有尊荣，死而令人哀痛，他怎么能够企及呢？”</span></p>
-
-    <p class="page-break" id="calibre_pb_62"></p>
-</div>
-</div>
-    <script>
-    (function() {
-        const raw = document.getElementById('rawContent').innerHTML;
-        const container = document.getElementById('chapterContent');
-        if (!container) return;
-        
-        const temp = document.createElement('div');
-        temp.innerHTML = raw;
-        
-        const paragraphs = temp.querySelectorAll('p');
-        let isNote = false;
-        let isTrans = false;
-        
-        paragraphs.forEach(function(p) {
-            var html = p.innerHTML;
-            var text = p.textContent.trim();
-            
-            if (p.querySelector('h2')) return;
-            
-            if (html.indexOf('【题解】') !== -1 || html.indexOf('【注释】') !== -1 || html.indexOf('【译文】') !== -1) {
-                if (html.indexOf('【注释】') !== -1) { isNote = true; isTrans = false; }
-                else if (html.indexOf('【译文】') !== -1) { isNote = false; isTrans = true; }
-                else { isNote = false; isTrans = false; }
-                p.className = 'ly-label';
-                return;
-            }
-            
-            if (p.className.indexOf('kindle-cn-para-1em-indent1a') !== -1) {
-                p.className = 'ly-note';
-                return;
-            }
-            
-            if (isNote) {
-                p.className = 'ly-note';
-                return;
-            }
-            
-            if (isTrans) {
-                p.className = 'ly-trans';
-                return;
-            }
-            
-            if (text.length > 80 || text.indexOf('本篇') !== -1 || text.indexOf('《论语》') !== -1) {
-                p.className = 'ly-intro';
-                return;
-            }
-            
-            p.className = 'ly-original';
-        });
-        
-        container.innerHTML = temp.innerHTML;
-        
-        var back = document.createElement('a');
-        back.href = 'zhuzi-lunyu.html';
-        back.className = 'back-link';
-        back.textContent = '← 返回论语目录';
-        container.appendChild(back);
-    })();
-    </script>
 </body>
 </html>
